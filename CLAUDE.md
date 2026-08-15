@@ -245,9 +245,26 @@ canonical. Do **not** read coordinates from the console.
 
 ## Plugin header
 
-`WintersunNordicDivines.esp`'s `RecordData.yaml` should carry a sane `Stats.Version` — SSE Wrye Bash
-rejects `0.85`-style versions; use `1.7` or similar. (The current serialized header has
-`Author: DEFAULT` and no version — set both before shipping 2.0.)
+**All 20 plugin headers are set and must stay consistent** — every `RecordData.yaml` carries:
+
+```yaml
+ModHeader:
+  Flags:
+  - Small            # ESL; not on plugins that should stay full-size
+  Author: WhisperDealer
+  Stats:
+    Version: 1.71    # SSE header version. Wrye Bash rejects 0.85-style (LE) versions.
+```
+
+Give any new plugin the same two fields. Notes:
+
+- `Version` is pinned explicitly even though Mutagen already defaults to `1.71`, so a future Spriggit
+  default cannot silently change what ships.
+- **`Stats.NumRecords` / `NextFormID` are recalculated by Mutagen on every write** — do not hand-write
+  them. (After a build the addon reports 229 records and NextFormID `0x8B9`, which is exactly the next
+  free FormID from the audit above.)
+- Header `Description` (SNAM) is deliberately unset; mod-manager blurbs live in each release's
+  `build/releases/<Release>/fomod/info.xml` instead.
 
 ## Papyrus toolchain
 

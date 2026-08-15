@@ -6,7 +6,9 @@ GameRelease: SkyrimSE
 ModHeader:
   Flags:
   - Small
-  Author: ''
+  Author: WhisperDealer
+  Stats:
+    Version: 1.71
   MasterReferences:
   - Master: Skyrim.esm
     FileSize: 0
