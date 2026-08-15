@@ -43,7 +43,7 @@ and the FOMOD wiring together, which is exactly where hand-rolling goes wrong. I
    `Author: WhisperDealer`, `Stats: { Version: 1.71 }`, the `Small` flag if it should be ESL, and
    `WintersunNordicDivines.esp` among its masters.
 2. Add it to `build/manifest.json` **and** to the patches release's
-   `build/releases/Wintersun Nordic Addon Patches/fomod/ModuleConfig.xml`. The manifest `dest` and
+   `build/releases/Wintersun - Nordic Addon (Patch Collection)/fomod/ModuleConfig.xml`. The manifest `dest` and
    the FOMOD `source=` must match **exactly**, spaces included.
 3. Say in the FOMOD `<description>` which mod (and which of its plugins) the patch requires. Users
    pick from that text alone.

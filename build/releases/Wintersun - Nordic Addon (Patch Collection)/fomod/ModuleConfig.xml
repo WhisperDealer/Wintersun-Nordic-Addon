@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+    <moduleName>Wintersun - Nordic Addon (Shrines Patch Collection)</moduleName>
+    <installSteps order="Explicit">
+        <installStep name="Select Patches">
+            <optionalFileGroups order="Explicit">
+                <group name="The Great Cities Series" type="SelectAny">
+                    <plugins order="Explicit">
+                        <plugin name="The Great City of Winterhold">
+                            <description>Replaces the Julianos shrines with the Jhunal shrine.</description>
+                            <image path="fomod/images/GCWinterhold.jpg"/>
+                            <files>
+                                <file source="GreatCities/NordicWintersunTGCWinterholdPatch.esp" destination="NordicWintersunTGCWinterholdPatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="The Great City of Winterhold v4.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="The Great Town of Ivarstead">
+                            <description>Replaces the shrines added by The Great Town of Ivarstead with the Nordic Wintersun shrines.</description>
+                            <image path="fomod/images/GTIvarstead.jpg"/>
+                            <files>
+                                <file source="GreatCities/NordicWintersunTGTIvarsteadPatch.esp" destination="NordicWintersunTGTIvarsteadPatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="The Great Town of Ivarstead.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="The Great Village of Kynesgrove">
+                            <description>Replaces the Kynareth shrines with the Kyne shrine.</description>
+                            <image path="fomod/images/GVKynesgrove.jpg"/>
+                            <files>
+                                <file source="GreatCities/NordicWintersunTGVKynesgrovePatch.esp" destination="NordicWintersunTGVKynesgrovePatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="The Great Village of Kynesgrove.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+                <group name="Schlitzohr Towns" type="SelectAny">
+                    <plugins order="Explicit">
+                        <plugin name="Amber Guard">
+                            <description>Replaces the Shrine of Stuhn scripts with the Nordic Wintersun scripts.</description>
+                            <image path="fomod/images/SchlitzohrAmberGuard.jpg"/>
+                            <files>
+                                <file source="Other/NordicWintersunAmberGuardPatch.esp" destination="NordicWintersunAmberGuardPatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Amber Guard.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Granite Hill Village">
+                            <description>Granite Hill Village rebuilds the roadside shrine POI west of Rorikstead where the Nordic Addon places its Shrine of Tsun, replacing it with its own Shrine of Arkay. This patch turns that shrine into the Nordic Addon's Shrine of Orkey (the Nordic aspect of Arkay - fitting, since Granite Hill's own quest there is named "Blessing of Orkey"), renames the map marker to Shrine of Orkey, and keeps Granite Hill's rebuilt terrain so the Addon's original shrine no longer floats above it. Requires Granite Hill.esp active.
+
+Note: with this patch installed there is no Shrine of Tsun at this location - use one of the other Tsun shrine patches (Berserkyr, Capital Windhelm Expansion, The Old Ways) if you want one.</description>
+                            <image path="fomod/images/SchlitzohrGraniteHill.jpg"/>
+                            <files>
+                                <file source="Other/NordicWintersunGraniteHillPatch.esp" destination="NordicWintersunGraniteHillPatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Granite Hill.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+                <group name="Other Patches" type="SelectAny">
+                    <plugins order="Explicit">
+                        <plugin name="Thuldor's Ivarstead">
+                            <description>Replaces the Mara shrine with the Nordic Wintersun version.</description>
+                            <image path="fomod/images/ThuldorsIvarstead.jpg"/>
+                            <files>
+                                <file source="Other/NordicWintersunThuldorsIvarstead.esp" destination="NordicWintersunThuldorsIvarstead.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <type name="Optional"/>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Winterhold Restored">
+                            <description>Replaces the Shrine of Kyne and Jhunal scripts with the Nordic Wintersun scripts.</description>
+                            <image path="fomod/images/WinterholdRestored.jpg"/>
+                            <files>
+                                <file source="Other/NordicWintersunWinterholdRestoredPatch.esp" destination="NordicWintersunWinterholdRestoredPatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Winterhold Restored.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Shrine to Kyne">
+                            <description>Replaces the shrine added by Shrine to Kyne with the Nordic Wintersun version.</description>
+                            <image path="fomod/images/ShrineToKyne.jpg"/>
+                            <files>
+                                <file source="Other/Nordic Wintersun - Shrine to Kyne.esp" destination="Nordic Wintersun - Shrine to Kyne.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Shrine2Kyne.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Children of the Sky">
+                            <description>Redirects the Shrine of Kyne added by Children of the Sky to the Nordic Kyne faith, so praying at it earns favor with this addon's Kyne instead of Wintersun's vanilla Kynareth.</description>
+                            <files>
+                                <file source="Other/Nordic Wintersun - Children of the Sky.esp" destination="Nordic Wintersun - Children of the Sky.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Children of the Sky.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="The Old Ways - Nordic Religion">
+                            <description>Integrates The Old Ways with the Nordic Wintersun worship system and gives its unique shrine models to the whole addon. All nine Old Ways shrines gain Nordic worship (Shor routes to Wintersun's own Shor), and the Nordic Addon's own shrines - along with any other shrine patches you install that reuse them (Shrine to Kyne, Great City of Winterhold, Kynesgrove, Thuldor's Ivarstead) - adopt the matching Old Ways meshes. Requires The Old Ways - Nordic Religion.esp active.</description>
+                            <image path="fomod/images/TheOldWays.jpg"/>
+                            <files>
+                                <file source="Other/NordicWintersunTheOldWaysPatch.esp" destination="NordicWintersunTheOldWaysPatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="The Old Ways - Nordic Religion.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Remember the Old Ways I - Ancient Nordic Temple">
+                            <description>Routes the nine shrines in the Ancient Nordic Temple to the Nordic Wintersun worship system while keeping the temple's own altar meshes. Kyne, Jhunal, Stuhn, Tsun, Orkey and Alduin use the Nordic Addon blessings; Mara and Dibella use the Nordic variants; Shor routes to Wintersun's own Shor. Requires Ancient Nordic Temple - 12h.esp active.</description>
+                            <image path="fomod/images/RememberTheOldWays.jpg"/>
+                            <files>
+                                <file source="Other/NordicWintersunAncientNordicTemplePatch.esp" destination="NordicWintersunAncientNordicTemplePatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Ancient Nordic Temple - 12h.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Capital Windhelm Expansion">
+                            <description>Adds a Shrine of Tsun on the desk in the middle of the Cult of Tsun hall, so the cult's headquarters can actually be worshipped at. Requires WindhelmSSE.esp active.</description>
+                            <image path="fomod/images/CapitalWindhelmExpansion.jpg"/>
+                            <files>
+                                <file source="Other/NordicWintersunCapitalWindhelmPatch.esp" destination="NordicWintersunCapitalWindhelmPatch.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="WindhelmSSE.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Skyrim's Got Talent - Bards">
+                            <description>Reworks Nordic Dibella around Skyrim's Got Talent. Her tenet becomes "Learn the art of musical instruments" (favor the first time you learn each of the drum, flute and lute), and her Devotee boon increases the Fortify buffs you gain while performing. Requires SkyrimsGotTalent-Bards.esp active.</description>
+                            <files>
+                                <file source="Other/Nordic Wintersun - Skyrims Got Talent.esp" destination="Nordic Wintersun - Skyrims Got Talent.esp" priority="0"/>
+                                <file source="Other/Scripts/WSN_SGT_DibellaMusicFavor_Script.pex" destination="Scripts/WSN_SGT_DibellaMusicFavor_Script.pex" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="SkyrimsGotTalent-Bards.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Tales of Skyrim - Berserkyr  [DO NOT USE &quot;Berserkyr - Wintersun patch.esp&quot;]">
+                            <description>*** IMPORTANT: DO NOT USE "Berserkyr - Wintersun patch.esp" ALONGSIDE THIS. *** That file is the separate Wintersun-author patch bundled with Tales of Skyrim - Berserkyr, and it adds Tsun as its own Wintersun deity. It is INCOMPATIBLE with the Nordic Addon: both it and this addon override Wintersun's central quest to register Tsun at conflicting deity slots, so whichever loads last wipes the other's deities. Disable / do not install "Berserkyr - Wintersun patch.esp" and use THIS patch instead.
+
+This patch routes Berserkyr's Shrine of Tsun to the Nordic Wintersun worship system, so worshipping at the beartotem grants the Nordic Addon's Tsun faith (blessing, tenets and boons) instead of Berserkyr's standalone blessing. Followers of Tsun gain Tsun's Will, which prevents involuntary werebear transformations; the Shrine of Tsun blessing also prevents them for its duration, so even non-worshippers who pray there are protected. Requires Tales of Skyrim - Berserkyr.esp active.</description>
+                            <image path="fomod/images/Berserkyr.jpg"/>
+                            <files>
+                                <file source="Other/Nordic Wintersun - Berserkyr.esp" destination="Nordic Wintersun - Berserkyr.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Tales of Skyrim - Berserkyr.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+            </optionalFileGroups>
+        </installStep>
+        <installStep name="Stave Church 2024 - Version">
+            <optionalFileGroups order="Explicit">
+                <group name="Which Stave Church 2024 version do you use? (pick one, or neither)" type="SelectAtMostOne">
+                    <plugins order="Explicit">
+                        <plugin name="All-In-One (Stave Church 2024 AIO.esp)">
+                            <description>Choose this if you use the All-In-One version of Stave Church 2024 (Stave Church 2024 AIO.esp). Installs a single patch covering the Dawnstar, Ivarstead and Windhelm shrines. Do NOT combine with the individual city patches.</description>
+                            <image path="fomod/images/StaveChurches2024.jpg"/>
+                            <conditionFlags>
+                                <flag name="StaveVersion">AIO</flag>
+                            </conditionFlags>
+                            <files>
+                                <file source="StaveChurches/Nordic Wintersun - Stave Church AIO.esp" destination="Nordic Wintersun - Stave Church AIO.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Stave Church 2024 AIO.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Individual city ESPs (choose cities on the next page)">
+                            <description>Choose this if you use the separate Stave Church 2024 city ESPs (Dawnstar / Ivarstead / Windhelm). You will pick which city patches to install on the next page. Do NOT combine with the AIO patch.</description>
+                            <image path="fomod/images/StaveChurches2024.jpg"/>
+                            <conditionFlags>
+                                <flag name="StaveVersion">Individual</flag>
+                            </conditionFlags>
+                            <files/>
+                            <typeDescriptor>
+                                <type name="Optional"/>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+            </optionalFileGroups>
+        </installStep>
+        <installStep name="Stave Church 2024 - Individual City Patches">
+            <visible>
+                <flagDependency flag="StaveVersion" value="Individual"/>
+            </visible>
+            <optionalFileGroups order="Explicit">
+                <group name="Select which city patches to install" type="SelectAny">
+                    <plugins order="Explicit">
+                        <plugin name="Dawnstar">
+                            <description>Replaces the Dawnstar Stave Church shrine (Totem of Stuhn) with the Nordic Wintersun version.</description>
+                            <image path="fomod/images/StaveChurches2024.jpg"/>
+                            <files>
+                                <file source="StaveChurches/Nordic Wintersun - Stave Church Dawnstar.esp" destination="Nordic Wintersun - Stave Church Dawnstar.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Stave Church 2024 - Dawnstar.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Ivarstead">
+                            <description>Replaces the Ivarstead Stave Church shrine (Totem of Kyne) with the Nordic Wintersun version.</description>
+                            <image path="fomod/images/StaveChurches2024.jpg"/>
+                            <files>
+                                <file source="StaveChurches/Nordic Wintersun - Stave Church Ivarstead.esp" destination="Nordic Wintersun - Stave Church Ivarstead.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Stave Church 2024 - Ivarstead.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Windhelm">
+                            <description>Replaces the Windhelm Stave Church shrine (Totem of Tsun) with the Nordic Wintersun version.</description>
+                            <image path="fomod/images/StaveChurches2024.jpg"/>
+                            <files>
+                                <file source="StaveChurches/Nordic Wintersun - Stave Church Windhelm.esp" destination="Nordic Wintersun - Stave Church Windhelm.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Stave Church 2024 - Windhelm.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+            </optionalFileGroups>
+        </installStep>
+    </installSteps>
+</config>

@@ -1,0 +1,35 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+    <moduleName>Wintersun Nordic Addon</moduleName>
+    <moduleImage path="fomod\images\NordicAddon.png"/>
+    <requiredInstallFiles>
+        <file source="WintersunNordicDivines.esp" destination="WintersunNordicDivines.esp"/>
+        <folder source="Scripts" destination="Scripts"/>
+    </requiredInstallFiles>
+    <installSteps order="Explicit">
+        <installStep name="Options">
+            <optionalFileGroups order="Explicit">
+                <group name="Installation" type="SelectExactlyOne">
+                    <plugins order="Explicit">
+                        <plugin name="Nordic Addon">
+                            <description>Installs the Wintersun Nordic Addon on its own.</description>
+                            <image path="fomod\images\NordicAddon.png"/>
+                            <typeDescriptor>
+                                <type name="Recommended"/>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="Nordic Addon + Tribunal Patch">
+                            <description>Installs the Nordic Addon plus the patch for Tribunal Integration by bombasticmori.</description>
+                            <image path="fomod\images\tribunal.png"/>
+                            <files>
+                                <file source="optional/WintersunNordicAddonTribunalPatch.esp" destination="WintersunNordicAddonTribunalPatch.esp"/>
+                            </files>
+                            <typeDescriptor>
+                                <type name="Optional"/>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+            </optionalFileGroups>
+        </installStep>
+    </installSteps>
+</config>

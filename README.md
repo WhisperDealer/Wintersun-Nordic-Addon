@@ -26,8 +26,8 @@ Two installable archives, both produced by one command:
 
 | Archive | Contents |
 |---|---|
-| `Wintersun Nordic Addon.7z` | `WintersunNordicDivines.esp` + 18 compiled scripts, plus the optional `WintersunNordicAddonTribunalPatch.esp` (FOMOD-selectable) |
-| `Wintersun Nordic Addon - Patches.7z` | 18 optional compatibility patches, one FOMOD checkbox each |
+| `Wintersun - Nordic Addon.7z` | `WintersunNordicDivines.esp` + 18 compiled scripts, plus the optional `WintersunNordicAddonTribunalPatch.esp` (FOMOD-selectable) |
+| `Wintersun - Nordic Addon (Patch Collection).7z` | 18 optional compatibility patches, one FOMOD checkbox each |
 
 Patches cover: Amber Guard · Ancient Nordic Temple · Berserkyr · Capital Windhelm Expansion ·
 Children of the Sky · Granite Hill · Skyrim's Got Talent · Shrine to Kyne · Stave Churches 2024

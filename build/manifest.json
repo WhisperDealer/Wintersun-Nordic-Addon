@@ -1,46 +1,46 @@
 {
-  "$comment": "Single source of truth for the CI/local build. Each release lists the Spriggit YAML folders to deserialize and where the built .esp lands inside the release (FOMOD) tree. 'dest' paths must match the source= attributes in that release's build/releases/<name>/fomod/ModuleConfig.xml (verified by build/build.ps1 -CheckFomod). Paths are repo-relative and every plugin's YAML lives under src/. Optional per-release keys: 'scripts' bulk-copies committed build artifacts - one {from,to} object or an array of them, each with an optional 'pattern' (default *.pex); 'allowUnreferencedPlugins' silences the warning about a plugin the FOMOD never installs; 'fomod': false ships a plain archive with no installer - the right shape whenever the install has nothing to ask (a single .esp with no options), and build/releases/<name>/fomod/ must then not exist. Optional per-plugin key: 'scripts' [{from,to}] copies individual .pex that belong to that one plugin. Add releases with the /mod-new-plugin skill.",
+  "$comment": "Single source of truth for the CI/local build. Each release lists the Spriggit YAML folders to deserialize and where the built .esp lands inside the release (FOMOD) tree. 'dest' paths must match the source= attributes in that release's build/releases/<name>/fomod/ModuleConfig.xml (verified by build/build.ps1 -CheckFomod). Paths are repo-relative and every plugin's YAML lives under src/. Release names and archiveNames are the ones shipped since v2.0.0 - renaming them breaks continuity with the archives users already have, so leave them alone. Optional per-release keys: 'scripts' bulk-copies committed build artifacts - one {from,to} object or an array of them, each with an optional 'pattern' (default *.pex); 'allowUnreferencedPlugins' silences the warning about a plugin the FOMOD never installs; 'fomod': false ships a plain archive with no installer, and build/releases/<name>/fomod/ must then not exist. Optional per-plugin key: 'scripts' [{from,to}] copies individual .pex that belong to that one plugin. Add releases with the /mod-new-plugin skill.",
   "releases": [
     {
-      "name": "Wintersun Nordic Addon",
-      "archiveName": "Wintersun Nordic Addon",
+      "name": "Wintersun - Nordic Addon",
+      "archiveName": "Wintersun - Nordic Addon",
       "scripts": [
         { "from": "src/WintersunNordicAddon/NordicAddonScripts/compiled", "to": "Scripts" }
       ],
       "plugins": [
         { "yamlSource": "src/WintersunNordicAddon/NordicAddonESP", "dest": "WintersunNordicDivines.esp" },
-        { "yamlSource": "src/WintersunNordicAddon/TribunalPatchESP", "dest": "WintersunNordicAddonTribunalPatch.esp" }
+        { "yamlSource": "src/WintersunNordicAddon/TribunalPatchESP", "dest": "optional/WintersunNordicAddonTribunalPatch.esp" }
       ]
     },
     {
-      "name": "Wintersun Nordic Addon Patches",
-      "archiveName": "Wintersun Nordic Addon - Patches",
+      "name": "Wintersun - Nordic Addon (Patch Collection)",
+      "archiveName": "Wintersun - Nordic Addon (Patch Collection)",
       "plugins": [
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/AmberGuard", "dest": "NordicWintersunAmberGuardPatch.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/AncientNordicTemple", "dest": "NordicWintersunAncientNordicTemplePatch.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/Berserkyr", "dest": "Nordic Wintersun - Berserkyr.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/CapitalWindhelmExpansion", "dest": "NordicWintersunCapitalWindhelmPatch.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ChildrenOfTheSky", "dest": "Nordic Wintersun - Children of the Sky.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/GraniteHill", "dest": "NordicWintersunGraniteHillPatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TGCWinterhold", "dest": "GreatCities/NordicWintersunTGCWinterholdPatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TGTIvarstead", "dest": "GreatCities/NordicWintersunTGTIvarsteadPatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TGVKynesgrove", "dest": "GreatCities/NordicWintersunTGVKynesgrovePatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesAIO", "dest": "StaveChurches/Nordic Wintersun - Stave Church AIO.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesDawnstar", "dest": "StaveChurches/Nordic Wintersun - Stave Church Dawnstar.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesIvarstead", "dest": "StaveChurches/Nordic Wintersun - Stave Church Ivarstead.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesWindhelm", "dest": "StaveChurches/Nordic Wintersun - Stave Church Windhelm.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/AmberGuard", "dest": "Other/NordicWintersunAmberGuardPatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ThuldorsIvarstead", "dest": "Other/NordicWintersunThuldorsIvarstead.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/WinterholdRestored", "dest": "Other/NordicWintersunWinterholdRestoredPatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ShrineToKyne", "dest": "Other/Nordic Wintersun - Shrine to Kyne.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ChildrenOfTheSky", "dest": "Other/Nordic Wintersun - Children of the Sky.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TheOldWays", "dest": "Other/NordicWintersunTheOldWaysPatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/AncientNordicTemple", "dest": "Other/NordicWintersunAncientNordicTemplePatch.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/CapitalWindhelmExpansion", "dest": "Other/NordicWintersunCapitalWindhelmPatch.esp" },
         {
           "yamlSource": "src/WintersunNordicAddonPatchesCollection/SGT",
-          "dest": "Nordic Wintersun - Skyrims Got Talent.esp",
-          "$comment": "This patch is the only one that ships a script. WSN_SGT_DibellaMusicFavor_Script is authored in the addon's script folder (it writes to the addon's favor arrays) but is referenced ONLY by this patch's MGEF, so the collection has to carry its own copy to be self-contained. Identical bytes to the copy in the addon archive, so the two never conflict meaningfully.",
+          "dest": "Other/Nordic Wintersun - Skyrims Got Talent.esp",
+          "$comment": "The only patch that ships a script. WSN_SGT_DibellaMusicFavor_Script is authored in the addon's script folder (it writes to the addon's favor arrays) but is referenced ONLY by this patch's MGEF, so the collection carries its own copy. Identical bytes to the copy in the addon archive.",
           "scripts": [
-            { "from": "src/WintersunNordicAddon/NordicAddonScripts/compiled/WSN_SGT_DibellaMusicFavor_Script.pex", "to": "Scripts" }
+            { "from": "src/WintersunNordicAddon/NordicAddonScripts/compiled/WSN_SGT_DibellaMusicFavor_Script.pex", "to": "Other/Scripts" }
           ]
         },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ShrineToKyne", "dest": "Nordic Wintersun - Shrine to Kyne.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesAIO", "dest": "Nordic Wintersun - Stave Church AIO.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesDawnstar", "dest": "Nordic Wintersun - Stave Church Dawnstar.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesIvarstead", "dest": "Nordic Wintersun - Stave Church Ivarstead.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/StaveChurchesWindhelm", "dest": "Nordic Wintersun - Stave Church Windhelm.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TGCWinterhold", "dest": "NordicWintersunTGCWinterholdPatch.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TGTIvarstead", "dest": "NordicWintersunTGTIvarsteadPatch.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TGVKynesgrove", "dest": "NordicWintersunTGVKynesgrovePatch.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TheOldWays", "dest": "NordicWintersunTheOldWaysPatch.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ThuldorsIvarstead", "dest": "NordicWintersunThuldorsIvarstead.esp" },
-        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/WinterholdRestored", "dest": "NordicWintersunWinterholdRestoredPatch.esp" }
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/Berserkyr", "dest": "Other/Nordic Wintersun - Berserkyr.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/GraniteHill", "dest": "Other/NordicWintersunGraniteHillPatch.esp" }
       ]
     }
   ]

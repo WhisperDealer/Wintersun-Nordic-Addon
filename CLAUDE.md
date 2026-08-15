@@ -336,8 +336,8 @@ Two archives come out of one data-driven build (`build/manifest.json` holds all 
 
 | Archive | Contents |
 |---|---|
-| `Wintersun Nordic Addon.7z` | `WintersunNordicDivines.esp` + 18 `.pex`, + the Tribunal patch as a FOMOD option |
-| `Wintersun Nordic Addon - Patches.7z` | the 18 compatibility patches, one FOMOD checkbox each |
+| `Wintersun - Nordic Addon.7z` | `WintersunNordicDivines.esp` + 18 `.pex`, + the Tribunal patch as a FOMOD option |
+| `Wintersun - Nordic Addon (Patch Collection).7z` | the 18 compatibility patches, one FOMOD checkbox each |
 
 ```powershell
 build/build.ps1 -CheckFomod   # manifest <-> ModuleConfig.xml parity (no Spriggit/7-Zip needed)
