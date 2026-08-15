@@ -1,0 +1,33 @@
+FormKey: 000885:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Alduin_Tenets_Effect_Ab
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_NordicLaws_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_PenaltyPerBounty
+      Object: 06AD14:Wintersun - Faiths of Skyrim.esp
+Name:
+  TargetLanguage: English
+  Value: Tenets of Alduin
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Slay dragons and devour their souls. Wield the Voice as the World-Eater's chosen. Walk the path of the Dragonborn, but seek to restore Alduin to his rightful station as devourer of worlds - not to unmake him for the conquest of mortals. Never openly break the laws of Skyrim.

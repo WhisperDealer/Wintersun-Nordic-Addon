@@ -1,0 +1,18 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Skyrim
+  Version: 0.40
+ModKey: Nordic Wintersun - Skyrims Got Talent.esp
+GameRelease: SkyrimSE
+ModHeader:
+  Flags:
+  - Small
+  Author: ''
+  MasterReferences:
+  - Master: Skyrim.esm
+    FileSize: 0
+  - Master: Wintersun - Faiths of Skyrim.esp
+    FileSize: 0
+  - Master: WintersunNordicDivines.esp
+    FileSize: 0
+  - Master: SkyrimsGotTalent-Bards.esp
+    FileSize: 0

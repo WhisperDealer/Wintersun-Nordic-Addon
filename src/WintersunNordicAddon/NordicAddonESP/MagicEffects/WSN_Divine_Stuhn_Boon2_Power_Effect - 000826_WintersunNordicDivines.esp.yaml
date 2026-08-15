@@ -1,0 +1,64 @@
+FormKey: 000826:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Stuhn_Boon2_Power_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_Stuhn_Ransom_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FleeSpell
+      Object: 000828:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LastDayGlobal
+      Object: 0008AC:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CastExplosion
+      Object: 019BB1:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterAura
+      Object: 012FD9:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Radius
+      Data: 1500
+    - MutagenObjectType: ScriptIntProperty
+      Name: MaxTargets
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: LevelMargin
+      Data: 10
+    - MutagenObjectType: ScriptIntProperty
+      Name: GoldPerTarget
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: GoldPerLevel
+      Data: 3
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FavorCost
+      Data: 0
+Name:
+  TargetLanguage: English
+  Value: Stuhn's Ransom
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Once a day, beatable foes around you yield and flee, and those who surrender pay you ransom in gold.

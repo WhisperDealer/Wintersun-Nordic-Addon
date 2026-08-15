@@ -1,0 +1,17 @@
+FormKey: 00086F:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NADibella_Tenets_Spell_Ab
+Name:
+  TargetLanguage: English
+  Value: Follower of Dibella
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 00086E:WintersunNordicDivines.esp
+  Data: {}

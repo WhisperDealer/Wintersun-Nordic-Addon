@@ -1,0 +1,47 @@
+FormKey: 00085D:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NAMara_Tenets_Effect_Ab
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_NordicLaws_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_PenaltyPerBounty
+      Object: 06AD14:Wintersun - Faiths of Skyrim.esp
+  - Name: WSN_Divine_NAMara_PackFavor_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFollowerCount
+      Object: 0BCC98:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_FavorPerTick
+      Object: 0008B8:WintersunNordicDivines.esp
+Name:
+  TargetLanguage: English
+  Value: Tenets of Mara
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Be married. Fight alongside your followers. Never openly break the laws of Skyrim.

@@ -1,0 +1,21 @@
+FormKey: 000808:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Kyne_Boon1_Effect_Ab_InCombat
+Name:
+  TargetLanguage: English
+  Value: Regenerate Stamina
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- HideInUI
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: StaminaRate
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

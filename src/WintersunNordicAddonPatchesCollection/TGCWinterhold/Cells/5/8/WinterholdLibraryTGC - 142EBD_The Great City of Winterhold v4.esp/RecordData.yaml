@@ -1,0 +1,54 @@
+FormKey: 142EBD:The Great City of Winterhold v4.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WinterholdLibraryTGC
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hall of Runes
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#007C7C7C'
+  DirectionalColor: '#00C0C0C0'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 0C0C76:Skyrim.esm
+WaterHeight: 0
+Location: 143085:The Great City of Winterhold v4.esp
+Owner: 143086:The Great City of Winterhold v4.esp
+SkyAndWeatherFromRegion: 0C5852:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 43B3FD:The Great City of Winterhold v4.esp
+  Base: 00081B:WintersunNordicDivines.esp
+  Placement:
+    Position: -5011.1157, -1819.9622, 114.694214
+    Rotation: 0, -0, 2.3410082
+MajorFlags:
+- 0x40000

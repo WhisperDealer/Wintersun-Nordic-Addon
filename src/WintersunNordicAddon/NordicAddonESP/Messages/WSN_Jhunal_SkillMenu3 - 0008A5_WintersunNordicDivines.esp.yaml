@@ -1,0 +1,21 @@
+FormKey: 0008A5:WintersunNordicDivines.esp
+EditorID: WSN_Jhunal_SkillMenu3
+Description:
+  TargetLanguage: English
+  Value: Choose a skill for Jhunal to raise by one level.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Speech
+- Text:
+    TargetLanguage: English
+    Value: Alchemy
+- Text:
+    TargetLanguage: English
+    Value: Back
+- Text:
+    TargetLanguage: English
+    Value: Cancel

@@ -1,0 +1,26 @@
+FormKey: 000804:Ancient Nordic Temple - 12h.esp
+EditorID: ANToSShrineofAlduin
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00088D:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 000888:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -81, -90, -117
+  Second: 81, 95, 121
+Name:
+  TargetLanguage: English
+  Value: Shrine of Alduin
+Model:
+  File: Dungeons\Nordic\Clutter\NorPuzzleKeyDragon01.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

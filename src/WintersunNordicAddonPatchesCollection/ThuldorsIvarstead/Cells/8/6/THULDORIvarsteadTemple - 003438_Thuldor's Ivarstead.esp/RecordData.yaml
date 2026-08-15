@@ -1,0 +1,51 @@
+FormKey: 003438:Thuldor's Ivarstead.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: THULDORIvarsteadTemple
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mara's Chapel
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00808080'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#008D8086'
+    DirectionalXMinus: '#0073807A'
+    DirectionalYPlus: '#00808680'
+    DirectionalYMinus: '#00807A80'
+    DirectionalZPlus: '#003D3D3A'
+    DirectionalZMinus: '#00C3C3C6'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+WaterHeight: 0
+Location: 018A4B:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 006D06:Thuldor's Ivarstead.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 000867:WintersunNordicDivines.esp
+  Placement:
+    Position: -256.54352, 54.325684, -120.19439
+    Rotation: 0, -0, 4.954835
+MajorFlags:
+- 0x40000

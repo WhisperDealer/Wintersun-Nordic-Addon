@@ -1,0 +1,91 @@
+FormKey: 000839:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Tsun_TrialByCombat_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_Tsun_TrialByCombat_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FavorCost
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChampionBase
+      Object: 096FFB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrialFaction
+      Object: 0008AE:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChallengePerk
+      Object: 0008B3:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DismissPerk
+      Object: 0008B4:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DismissGlobal
+      Object: 0008B5:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptIntProperty
+      Name: ChampionLevelMod
+      Data: 0
+    - MutagenObjectType: ScriptFloatProperty
+      Name: MaxTrialTime
+      Data: 300
+    - MutagenObjectType: ScriptFloatProperty
+      Name: PollInterval
+      Data: 2
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardDuration
+      Data: 90
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ChampionHealthMult
+      Data: 1.5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ChampionDamageBonus
+      Data: 0.5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardDamageBase
+      Data: 0.3
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardDamagePerFavor
+      Data: 0.03
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardArmorBase
+      Data: 40
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardArmorPerFavor
+      Data: 8
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardHealthBase
+      Data: 40
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardHealthPerFavor
+      Data: 6
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardRegenBase
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RewardRegenPerFavor
+      Data: 0.3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardAura
+      Object: 012FD9:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Trial by Combat
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Summon a champion of Sovngarde to test you in single combat. Defeat them to be filled with a hero's might.

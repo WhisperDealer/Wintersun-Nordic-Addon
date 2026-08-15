@@ -1,0 +1,41 @@
+FormKey: 00081F:WintersunNordicDivines.esp
+EditorID: WSN_Shrine_Effect_WorshipRequest_Divine_Stuhn
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_WorshipRequest_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_AltarMessage_Misc_AlreadyWorshipping
+      Object: 019BB0:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptIntProperty
+      Name: WSN_DeityID
+      Data: 54
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Spell_AtShrine
+      Object: 214A49:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_WorshipRequest_Message
+      Object: 000820:WintersunNordicDivines.esp
+Name:
+  TargetLanguage: English
+  Value: Do you want to worship Stuhn?
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,11 @@
+FormKey: 000894:WintersunNordicDivines.esp
+EditorID: WSN_Item_HornOfFirstTongues_Ench
+Name:
+  TargetLanguage: English
+  Value: Echo of the First Tongues
+EnchantmentCost: 666
+EnchantmentAmount: 666
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 000895:WintersunNordicDivines.esp
+  Data: {}

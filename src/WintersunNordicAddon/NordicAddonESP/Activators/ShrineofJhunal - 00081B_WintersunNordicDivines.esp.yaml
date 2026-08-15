@@ -1,0 +1,26 @@
+FormKey: 00081B:WintersunNordicDivines.esp
+EditorID: ShrineofJhunal
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00081C:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 000811:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -17, -17, 55
+  Second: 17, 17, 76
+Name:
+  TargetLanguage: English
+  Value: Shrine of Jhunal
+Model:
+  File: Clutter\Shrines\ShrineJulianos.nif
+  Data: 0x020000000200000000000000641245356464730081A1A1366AE701656464730081A1A136
+MarkerColor: '#00CC4C33'
+Flags: []

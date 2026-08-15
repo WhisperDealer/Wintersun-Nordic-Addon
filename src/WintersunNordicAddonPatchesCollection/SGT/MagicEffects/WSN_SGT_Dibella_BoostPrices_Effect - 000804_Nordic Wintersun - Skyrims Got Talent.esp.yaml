@@ -1,0 +1,29 @@
+FormKey: 000804:Nordic Wintersun - Skyrims Got Talent.esp
+EditorID: WSN_SGT_Dibella_BoostPrices_Effect
+Name:
+  TargetLanguage: English
+  Value: Dibella's Encore
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeechcraftModifier
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: While your flute performance's blessing lasts, prices are a further <mag>% better.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: EqualTo
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 003354:SkyrimsGotTalent-Bards.esp
+  ComparisonValue: 1

@@ -1,0 +1,7 @@
+FormKey: 00085C:WintersunNordicDivines.esp
+EditorID: WSN_Basic_Message_Divine_NAMara
+Description:
+  TargetLanguage: English
+  Value: 'Favor with Mara: %.1f%%'
+INAM: 0x00000000
+DisplayTime: 2

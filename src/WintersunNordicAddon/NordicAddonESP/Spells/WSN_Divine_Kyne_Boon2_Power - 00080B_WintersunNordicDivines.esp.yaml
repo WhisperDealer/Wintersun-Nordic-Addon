@@ -1,0 +1,20 @@
+FormKey: 00080B:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Kyne_Boon2_Power
+Name:
+  TargetLanguage: English
+  Value: Breath of Kyne
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Reduce the time between shouts to zero for 60 seconds. Costs 20% of your favor with Kyne.
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 00080A:WintersunNordicDivines.esp
+  Data:
+    Magnitude: 100
+    Duration: 60

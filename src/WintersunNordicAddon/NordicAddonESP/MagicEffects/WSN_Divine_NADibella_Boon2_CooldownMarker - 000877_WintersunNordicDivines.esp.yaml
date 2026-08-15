@@ -1,0 +1,29 @@
+FormKey: 000877:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NADibella_Boon2_CooldownMarker
+Name:
+  TargetLanguage: English
+  Value: Passion's Frenzy Cooldown
+Flags:
+- Recover
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- HideInUI
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 000877:WintersunNordicDivines.esp

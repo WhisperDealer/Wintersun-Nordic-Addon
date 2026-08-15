@@ -1,0 +1,26 @@
+FormKey: 00080E:WintersunNordicDivines.esp
+EditorID: ShrineOfKyne
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00080F:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 000801:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -12, -16, 55
+  Second: 12, 13, 89
+Name:
+  TargetLanguage: English
+  Value: Shrine of Kyne
+Model:
+  File: Clutter\Shrines\ShrineKynareth.nif
+  Data: 0x020000000200000000000000D46BD7436464730081A1A136D8F61DA86464730081A1A136
+MarkerColor: '#00CC4C33'
+Flags: []

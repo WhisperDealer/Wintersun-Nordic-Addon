@@ -1,0 +1,49 @@
+FormKey: 000862:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NAMara_Boon2_Effect_Ab
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_NAMara_HearthWife_Script
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UpdateInterval
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global_Fractional
+      Object: 014A56:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: MaxShareFraction
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Radius
+      Data: 1200
+    - MutagenObjectType: ScriptIntProperty
+      Name: MaxTargets
+      Data: 10
+    - MutagenObjectType: ScriptFloatProperty
+      Name: MinHealDelta
+      Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HealShader
+      Object: 012FD9:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Hearth-Wife's Protection
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: When Mara mends your wounds, a share of that healing flows to your nearby followers - half at first, rising to a full measure as your favor deepens.

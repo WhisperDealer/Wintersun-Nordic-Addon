@@ -1,0 +1,9 @@
+MutagenObjectType: GlobalFloat
+FormKey: 0008B8:WintersunNordicDivines.esp
+EditorID: WSN_ModifyFavor_Divine_NAMara_FavorPerCombatTick
+MajorRecordFlagsRaw: 64
+SkyrimMajorRecordFlags:
+- 0x40
+MajorFlags:
+- Constant
+Data: 0.5

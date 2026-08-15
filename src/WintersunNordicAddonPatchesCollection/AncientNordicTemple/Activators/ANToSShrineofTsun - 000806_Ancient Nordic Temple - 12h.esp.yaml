@@ -1,0 +1,26 @@
+FormKey: 000806:Ancient Nordic Temple - 12h.esp
+EditorID: ANToSShrineofTsun
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00083C:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 00082F:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -81, -90, -117
+  Second: 81, 95, 121
+Name:
+  TargetLanguage: English
+  Value: Shrine of Tsun
+Model:
+  File: Dungeons\Nordic\Clutter\NorPuzzleKeyBear01.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

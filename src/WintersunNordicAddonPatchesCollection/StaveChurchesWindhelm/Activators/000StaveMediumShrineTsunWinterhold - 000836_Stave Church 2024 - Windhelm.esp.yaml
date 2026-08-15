@@ -1,0 +1,26 @@
+FormKey: 000836:Stave Church 2024 - Windhelm.esp
+EditorID: 000StaveMediumShrineTsunWinterhold
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00083C:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 00082F:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -51, -35, -4
+  Second: 51, 12, 265
+Name:
+  TargetLanguage: English
+  Value: Totem of Tsun
+Model:
+  File: RBStaveChurchMediumMeshes\StaveDawnstarTotem02.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

@@ -1,0 +1,57 @@
+FormKey: 04DFBA:WindhelmSSE.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: 0WHTsunCultHQ
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Cult of Tsun
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001B1810'
+  DirectionalColor: '#003A4345'
+  FogNearColor: '#00734931'
+  FogFar: 3000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#001D1810'
+    DirectionalXMinus: '#0018180F'
+    DirectionalYPlus: '#001B1910'
+    DirectionalYMinus: '#001B1610'
+    DirectionalZPlus: '#000C0B07'
+    DirectionalZMinus: '#00292418'
+    Specular: '#0087795A'
+    Scale: 1
+  FogFarColor: '#0087795A'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 07BA87:Skyrim.esm
+WaterHeight: 0
+Location: 1C9457:WindhelmSSE.esp
+Owner: 0622EA:WindhelmSSE.esp
+AcousticSpace: 0C5D0A:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 000800:NordicWintersunCapitalWindhelmPatch.esp
+  EditorID: WSN_ShrineOfTsun_WHCultOfTsun_Ref
+  Base: 00083B:WintersunNordicDivines.esp
+  Placement:
+    Position: -570.5916, -2652.4346, 456
+    Rotation: 0, -0, 5.4977875
+MajorFlags:
+- 0x40000

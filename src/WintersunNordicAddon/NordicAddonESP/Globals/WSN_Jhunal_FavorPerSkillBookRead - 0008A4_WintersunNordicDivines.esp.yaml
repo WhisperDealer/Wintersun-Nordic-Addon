@@ -1,0 +1,9 @@
+MutagenObjectType: GlobalFloat
+FormKey: 0008A4:WintersunNordicDivines.esp
+MajorRecordFlagsRaw: 64
+EditorID: WSN_Jhunal_FavorPerSkillBookRead
+SkyrimMajorRecordFlags:
+- 0x40
+MajorFlags:
+- Constant
+Data: 0.5

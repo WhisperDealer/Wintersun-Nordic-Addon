@@ -1,0 +1,8 @@
+FormKey: 0008AE:WintersunNordicDivines.esp
+EditorID: WSN_TsunTrial_ChampionFaction
+Relations:
+- Target: 000DB1:Skyrim.esm
+  Reaction: Enemy
+Flags:
+- HiddenFromPC
+VendorValues: {}

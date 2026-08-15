@@ -1,0 +1,20 @@
+FormKey: 000835:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Tsun_Boon1_Effect_Ab
+Name:
+  TargetLanguage: English
+  Value: Test of the Worthy
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: VoiceRate
+DualCastScale: 1
+PerkToApply: 000838:WintersunNordicDivines.esp
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You deal more damage to, and take less damage from, foes whose level is above your own. The bonus grows with your favor with Tsun.

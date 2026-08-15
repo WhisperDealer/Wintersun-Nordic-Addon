@@ -1,0 +1,29 @@
+FormKey: 000831:WintersunNordicDivines.esp
+EditorID: WSN_WorshipRequest_Message_Divine_Tsun
+Description:
+  TargetLanguage: English
+  Value: >-
+    Follow the Nordic God Tsun?
+
+
+    Tsun is the God of Trials Against Adversity and guardian of the Whale Bone Bridge.
+
+
+    Follower:
+
+    Deal more damage and take less damage from foes whose level is above your own.
+
+
+    Tenets:
+
+    Honor your foes in open combat, especially those stronger than you. Never openly break the laws of Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Accept Tsun
+- Text:
+    TargetLanguage: English
+    Value: Cancel

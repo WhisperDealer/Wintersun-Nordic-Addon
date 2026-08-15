@@ -1,0 +1,30 @@
+FormKey: 000855:WintersunNordicDivines.esp
+EditorID: WSN_AltarBlessing_Divine_Orkey_Effect
+Name:
+  TargetLanguage: English
+  Value: Fortify Poisons
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Keywords:
+- 0FB98C:Skyrim.esm
+- 302DC6:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+EnchantShader: 092DEC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: VoicePoints
+  Association: 0FB98C:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: 000854:WintersunNordicDivines.esp
+CastingSoundLevel: Silent
+Sounds:
+- Type: OnHit
+  Sound: 01702D:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Poisons you mix are 15% more effective.

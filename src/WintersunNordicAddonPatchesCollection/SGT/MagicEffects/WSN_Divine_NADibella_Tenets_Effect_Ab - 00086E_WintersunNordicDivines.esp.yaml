@@ -1,0 +1,56 @@
+FormKey: 00086E:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NADibella_Tenets_Effect_Ab
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_NordicLaws_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_PenaltyPerBounty
+      Object: 06AD14:Wintersun - Faiths of Skyrim.esp
+  - Name: WSN_SGT_DibellaMusicFavor_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DrumExpertise
+      Object: 000D63:SkyrimsGotTalent-Bards.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FluteExpertise
+      Object: 000D61:SkyrimsGotTalent-Bards.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LuteExpertise
+      Object: 000D62:SkyrimsGotTalent-Bards.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DrumLearned
+      Object: 000800:Nordic Wintersun - Skyrims Got Talent.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FluteLearned
+      Object: 000801:Nordic Wintersun - Skyrims Got Talent.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LuteLearned
+      Object: 000802:Nordic Wintersun - Skyrims Got Talent.esp
+Name:
+  TargetLanguage: English
+  Value: Tenets of Dibella
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Persuade others. Craft enchanted items. Learn the art of musical instruments. Never openly break the laws of Skyrim.

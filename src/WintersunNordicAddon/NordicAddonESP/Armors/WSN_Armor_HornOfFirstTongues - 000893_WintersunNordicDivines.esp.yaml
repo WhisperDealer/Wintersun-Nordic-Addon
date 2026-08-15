@@ -1,0 +1,28 @@
+FormKey: 000893:WintersunNordicDivines.esp
+EditorID: WSN_Armor_HornOfFirstTongues
+ObjectBounds:
+  First: -18, -8, -8
+  Second: 18, 8, 20
+Name:
+  TargetLanguage: English
+  Value: Horn of First Tongues
+ObjectEffect: 000894:WintersunNordicDivines.esp
+WorldModel:
+  Male:
+    Model:
+      File: Clutter\WindcallerHorn01.nif
+  Female:
+    Model:
+      File: Clutter\WindcallerHorn01.nif
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 013202:Skyrim.esm
+Keywords:
+- 0C27BD:Skyrim.esm
+- 0937A3:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Value: 500
+Weight: 1

@@ -1,0 +1,24 @@
+FormKey: 00089C:Tales of Skyrim - Berserkyr.esp
+EditorID: BOS_TsunsWill
+Name:
+  TargetLanguage: English
+  Value: Tsun's Will
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 5
+MagicSkill: Restoration
+EnchantShader: 092DED:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistDisease
+  Association: 0FB98C:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Prevents involuntary werebear transformations.

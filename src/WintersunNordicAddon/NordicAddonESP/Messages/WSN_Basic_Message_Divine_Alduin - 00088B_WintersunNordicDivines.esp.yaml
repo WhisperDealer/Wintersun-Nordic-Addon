@@ -1,0 +1,7 @@
+FormKey: 00088B:WintersunNordicDivines.esp
+EditorID: WSN_Basic_Message_Divine_Alduin
+Description:
+  TargetLanguage: English
+  Value: 'Favor with Alduin: %.1f%%'
+INAM: 0x00000000
+DisplayTime: 2

@@ -1,0 +1,25 @@
+FormKey: 000873:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NADibella_Boon2_Effect_Ab
+Name:
+  TargetLanguage: English
+  Value: Passion's Frenzy
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 000875:WintersunNordicDivines.esp
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: In combat, nearby enemies below level <mag> have a chance to fly into a frenzy and attack anything around them for <10> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

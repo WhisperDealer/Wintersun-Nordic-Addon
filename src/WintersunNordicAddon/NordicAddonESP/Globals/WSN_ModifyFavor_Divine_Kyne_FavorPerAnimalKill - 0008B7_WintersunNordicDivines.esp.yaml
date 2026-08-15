@@ -1,0 +1,9 @@
+MutagenObjectType: GlobalFloat
+FormKey: 0008B7:WintersunNordicDivines.esp
+EditorID: WSN_ModifyFavor_Divine_Kyne_FavorPerAnimalKill
+MajorRecordFlagsRaw: 64
+SkyrimMajorRecordFlags:
+- 0x40
+MajorFlags:
+- Constant
+Data: 0.5

@@ -1,0 +1,9 @@
+MutagenObjectType: GlobalFloat
+FormKey: 0008B6:WintersunNordicDivines.esp
+MajorRecordFlagsRaw: 64
+EditorID: WSN_ModifyFavor_Divine_Kyne_FavorByCompleteQuest
+SkyrimMajorRecordFlags:
+- 0x40
+MajorFlags:
+- Constant
+Data: 40

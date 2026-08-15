@@ -1,0 +1,7 @@
+FormKey: 000850:WintersunNordicDivines.esp
+EditorID: WSN_Basic_Message_Divine_Orkey
+Description:
+  TargetLanguage: English
+  Value: 'Favor with Orkey: %.1f%%'
+INAM: 0x00000000
+DisplayTime: 2

@@ -1,0 +1,48 @@
+FormKey: 0008B3:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Tsun_Challenge_Perk
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PRKF_WSN_Tsun_Challenge
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrialFaction
+      Object: 0008AE:WintersunNordicDivines.esp
+  ScriptFragments:
+    FileName: PRKF_WSN_Tsun_Challenge
+    Fragments:
+    - Unknown2: 1
+      ScriptName: PRKF_WSN_Tsun_Challenge
+      FragmentName: Fragment_0
+Name:
+  TargetLanguage: English
+  Value: Tsun
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointAddActivateChoice
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: EqualTo
+      ComparisonValue: 1
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 0008AE:WintersunNordicDivines.esp
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: EqualTo
+      ComparisonValue: 0
+      Data:
+        MutagenObjectType: GetDeadConditionData
+  ButtonLabel:
+    TargetLanguage: English
+    Value: Challenge
+  Flags:
+    Flags:
+    - ReplaceDefault
+  EntryPoint: Activate
+  PerkConditionTabCount: 2

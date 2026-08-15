@@ -1,0 +1,23 @@
+FormKey: 00088F:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Alduin_MeteorProjectile
+ObjectBounds:
+  First: -30, -191, -25
+  Second: 31, 40, 24
+Model:
+  File: Magic\FireballProjectile01.nif
+  Data: 0x020000000500000003000000CF238B7F6464730038973CEAA821F67864647300582C5533A11567276464730038973CEA6C6AC81F6464730038973CEA5BA4486E64647300582C5533050000000600000023000000
+Flags:
+- Explosion
+Type: Missile
+Gravity: 1
+Speed: 3000
+Range: 30000
+Light: 01CBB3:Skyrim.esm
+Explosion: 00087E:WintersunNordicDivines.esp
+Sound: 03C8FE:Skyrim.esm
+FadeDuration: 0.5
+ImpactForce: 1.5
+CollisionRadius: 10
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

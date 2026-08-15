@@ -1,0 +1,26 @@
+FormKey: 00590B:The Old Ways - Nordic Religion.esp
+EditorID: TOWShrineofMara
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 000868:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 000859:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -117, -28, -117
+  Second: 117, 28, 117
+Name:
+  TargetLanguage: English
+  Value: Shrine of Mara
+Model:
+  File: TheOldWays\clutter\shrines\TOWShrineMara.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

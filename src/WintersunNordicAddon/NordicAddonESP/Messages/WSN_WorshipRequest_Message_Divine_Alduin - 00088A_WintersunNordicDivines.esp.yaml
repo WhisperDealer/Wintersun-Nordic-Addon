@@ -1,0 +1,29 @@
+FormKey: 00088A:WintersunNordicDivines.esp
+EditorID: WSN_WorshipRequest_Message_Divine_Alduin
+Description:
+  TargetLanguage: English
+  Value: >-
+    Follow the World-Eater Alduin?
+
+
+    The great dragon whose duty is to devour the world at the end of the age.
+
+
+    Follower:
+
+    You deal more damage to dragons and take less damage from them
+
+
+    Tenets:
+
+    Slay dragons and devour their souls. Wield the Voice. Restore Alduin as devourer of worlds. Never openly break the laws of Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Accept Alduin
+- Text:
+    TargetLanguage: English
+    Value: Cancel

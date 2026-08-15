@@ -1,0 +1,3215 @@
+FormKey: 005901:Wintersun - Faiths of Skyrim.esp
+EditorID: WSN_TrackerQuest_Quest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_TrackerQuest_Quest
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MQ06
+      Object: 0179D7:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2RR01
+      Object: 018B13:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2RR02
+      Object: 018B14:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2TT2
+      Object: 0195A1:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameHour
+      Object: 000038:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GlenmorilCovenLocation
+      Object: 019189:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HighHrothgarLocation
+      Object: 018E34:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HumanFlesh
+      Object: 1016B3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HumanHeart
+      Object: 0B18CD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQpathToHHShrineEffect
+      Object: 10A2DB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFollowerCount
+      Object: 0BCC98:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerMarriedFaction
+      Object: 0C6472:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RestedMarriageSkillEffect
+      Object: 10D96C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Vampire
+      Object: 0A82BB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VendorItemArmor
+      Object: 08F959:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VendorItemClothing
+      Object: 08F95B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfChange
+      Object: 092C48:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunTempleofKynarethLocation
+      Object: 01F87D:Skyrim.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: WSN_AV
+      Data: VoiceRate
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_Blessing
+      Objects:
+      - Name: ''
+        Object: 0FB996:Skyrim.esm
+      - Name: ''
+        Object: 019B7A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 019B78:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06AD0E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FB998:Skyrim.esm
+      - Name: ''
+        Object: 065BEE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 03BCFB:Dragonborn.esm
+      - Name: ''
+        Object: 0FB99A:Skyrim.esm
+      - Name: ''
+        Object: 0FB988:Skyrim.esm
+      - Name: ''
+        Object: 0FB995:Skyrim.esm
+      - Name: ''
+        Object: 0935B1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0986CF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D7F7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FB99B:Skyrim.esm
+      - Name: ''
+        Object: 03BCFC:Dragonborn.esm
+      - Name: ''
+        Object: 10E8AE:Skyrim.esm
+      - Name: ''
+        Object: 0C6096:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FB997:Skyrim.esm
+      - Name: ''
+        Object: 03BCFD:Dragonborn.esm
+      - Name: ''
+        Object: 0FB994:Skyrim.esm
+      - Name: ''
+        Object: 0C60BC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0C60CC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FB999:Skyrim.esm
+      - Name: ''
+        Object: 011360:Dawnguard.esm
+      - Name: ''
+        Object: 0FDD3C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102EAE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0F8C1F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102EB1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102EAB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0E4768:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FDD4A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FDD47:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FDD42:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 107FC9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FDD5B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 107FB5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9645:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B962E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B963D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9637:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9649:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B962B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9639:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9628:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9631:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C89C5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 24C5E5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 24C5E9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 24C5E2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 24C5DA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD75:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD77:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1D81E4:ccasvsse001-almsivi.esm
+      - Name: ''
+        Object: 000826:ccasvsse001-almsivi.esm
+      - Name: ''
+        Object: 1D81E6:ccasvsse001-almsivi.esm
+      - Name: ''
+        Object: 000801:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000811:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00081E:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00082F:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000856:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00085A:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00086B:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000888:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_Boon1
+      Objects:
+      - Name: ''
+        Object: 00F942:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 019B67:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 01ECB2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 01ECB7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 03D355:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 060AE6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 07F15D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 07F161:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0517A8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 08E495:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0935A6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 060AD5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0517C2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D7D8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 04C691:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2911:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0517A4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 038235:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2926:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0517AC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2928:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0C60C0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E70:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E83:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0F8BE5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E87:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E8B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E81:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E91:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0E4762:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E95:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E99:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0F8C0B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E9D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102EA1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102EA3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAE7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 17C925:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C388F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAEB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAD5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C89B6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C389C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C89BE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAD9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C89CE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005D0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005D4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005D8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005DC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD73:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD79:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000826:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 00082B:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 00082F:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 000807:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000818:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000825:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000837:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00084D:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000860:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000871:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000884:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_Boon2
+      Objects:
+      - Name: ''
+        Object: 014A54:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 019B69:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 01ECB5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 01ECB9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 03D346:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 042466:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 07F15F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 04246A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 08E48D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 038219:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 033106:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0986C0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 060ADF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 038237:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 038225:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 060AE1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 038223:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 038230:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 03D34B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A292C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A292A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0C60C2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E73:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E85:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FDD34:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E89:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E8D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E8F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E93:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0E4764:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E97:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E9B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102EA7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102E9F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0FDD56:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 102EA5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAE9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C388D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C3891:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAED:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAD7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C89B8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C389F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C89C0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDADB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1C89D0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005D2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005D6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005DA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005DE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD7B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD81:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000828:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 00082C:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 000830:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 00080B:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00081A:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000829:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00083A:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 0008AA:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000863:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000874:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000880:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Cure_Spell
+      Object: 0F8BE8:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Daedra_Jyggalag_Boon1_Spell_ProcOnSelf
+      Object: 17780B:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_DeityName
+      Data:
+      - Julianos
+      - Syrabane
+      - Magnus
+      - Jephre
+      - Mara
+      - Meridia
+      - Azura
+      - Talos
+      - Akatosh
+      - Dibella
+      - Phynaster
+      - Mehrunes Dagon
+      - Vaermina
+      - Zenithar
+      - Boethiah
+      - Nocturnal
+      - Molag Bal
+      - Kynareth
+      - Mephala
+      - Arkay
+      - Sanguine
+      - Malacath
+      - Stendarr
+      - Auriel
+      - Peryite
+      - Hircine
+      - Xarxes
+      - Shor
+      - Hermaeus Mora
+      - Clavicus Vile
+      - Namira
+      - Jyggalag
+      - Trinimac
+      - Sheogorath
+      - Sithis
+      - Z'en
+      - Satakal
+      - Tall Papa
+      - the HoonDing
+      - Sai
+      - the Animal Gods
+      - Baan Dar
+      - Ebonarm
+      - Rajhin
+      - Riddle'Thar
+      - Morwha
+      - Leki
+      - the Hist
+      - St. Alessia
+      - Mannimarco
+      - the All-Maker
+      - the Magna-Ge
+      - Sotha Sil
+      - Almalexia
+      - Vivec
+      - Kyne
+      - Jhunal
+      - Stuhn
+      - Tsun
+      - Orkey
+      - Mara
+      - Dibella
+      - Alduin
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Divine_Kynareth_Boon2_Spell_ProcOnSelf
+      Object: 0BBE82:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_DivineType
+      Data:
+      - Divine
+      - Ancestor
+      - Ancestor
+      - Ancestor
+      - Divine
+      - Daedric Prince
+      - Daedric Prince
+      - Divine
+      - Divine
+      - Divine
+      - Ancestor
+      - Daedric Prince
+      - Daedric Prince
+      - Divine
+      - Daedric Prince
+      - Daedric Prince
+      - Daedric Prince
+      - Divine
+      - Daedric Prince
+      - Divine
+      - Daedric Prince
+      - Daedric Prince
+      - Divine
+      - Ancestor
+      - Daedric Prince
+      - Daedric Prince
+      - Ancestor
+      - Deity
+      - Daedric Prince
+      - Daedric Prince
+      - Daedric Prince
+      - Daedric Prince
+      - Ancestor
+      - Daedric Prince
+      - Deity
+      - Ancestor
+      - Yokudan Deity
+      - Yokudan Deity
+      - Yokudan Deity
+      - Deity
+      - Nordic Deity
+      - Deity
+      - Deity
+      - Khajiiti Deity
+      - Khajiiti Deity
+      - Yokudan Deity
+      - Yokudan Deity
+      - Deity
+      - Deity
+      - Deity
+      - Deity
+      - Deity
+      - Tribunal
+      - Tribunal
+      - Tribunal
+      - Nordic Deity
+      - Nordic Deity
+      - Nordic Deity
+      - Nordic Deity
+      - Nordic Deity
+      - Nordic Deity
+      - Nordic Deity
+      - Nordic Deity
+    - MutagenObjectType: ScriptIntListProperty
+      Name: WSN_DivineTypeID
+      Data:
+      - 0
+      - 2
+      - 2
+      - 2
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 2
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 2
+      - 1
+      - 1
+      - 2
+      - 6
+      - 1
+      - 1
+      - 1
+      - 1
+      - 2
+      - 1
+      - 6
+      - 2
+      - 3
+      - 3
+      - 3
+      - 6
+      - 6
+      - 6
+      - 6
+      - 4
+      - 4
+      - 3
+      - 3
+      - 6
+      - 6
+      - 6
+      - 6
+      - 6
+      - 5
+      - 5
+      - 5
+      - 7
+      - 7
+      - 7
+      - 7
+      - 7
+      - 7
+      - 7
+      - 7
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_DrainRateMult
+      Objects:
+      - Name: ''
+        Object: 2005C2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005C3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005C4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005C5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005CC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005CF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005C6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000891:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptFloatListProperty
+      Name: WSN_DrainRateMultIndividual
+      Data:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0.5
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 2
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 2
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_DynamicStat0
+      Data:
+      - ''
+      - Skill Books Read
+      - ''
+      - Books Read
+      - ''
+      - Undead Killed
+      - Souls Trapped
+      - Dragon Souls Collected
+      - Dragon Souls Collected
+      - Persuasions
+      - Ingredients Harvested
+      - People Killed
+      - ''
+      - Armor Made
+      - Sneak Attacks
+      - Locks Picked
+      - People Killed
+      - Locations Discovered
+      - Sneak Attacks
+      - Undead Killed
+      - Jail Escapes
+      - Armor Improved
+      - Daedra Killed
+      - ''
+      - Diseases Contracted
+      - ''
+      - Locations Discovered
+      - ''
+      - Skill Books Read
+      - ''
+      - Poisons Used
+      - Daedra Killed
+      - ''
+      - ''
+      - Murders
+      - Bribes
+      - Dragon Souls Collected
+      - Magic Items Made
+      - ''
+      - ''
+      - Dragon Souls Collected
+      - Pockets Picked
+      - Misc Objectives Completed
+      - Bribes
+      - ''
+      - Ingredients Harvested
+      - Weapons Made
+      - Locations Discovered
+      - ''
+      - Souls Trapped
+      - Animals Killed
+      - Locations Discovered
+      - Magic Items Made
+      - ''
+      - Books Read
+      - Locations Discovered
+      - ''
+      - Brawls Won
+      - Dungeons Cleared
+      - People Killed
+      - ''
+      - Persuasions
+      - Dragon Souls Collected
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_DynamicStat0_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+        Object: 019B6C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 01ECB4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 065BF3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 019B83:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 089380:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 08E491:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 08E498:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0935A8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0986C4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 09D7E3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D7E6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A290D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0C6090:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0B1C67:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0C60A5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A7A5C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0C60B5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0CB1E0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0F8BEF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 0F8BEE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 12B7E9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 144D6B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 144D65:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0F8BFA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8BFB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 144D5E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDB07:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E704C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 386903:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E7057:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E7050:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAFB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 1CDADE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 26FD3E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 36D39E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 3CD71C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD85:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD89:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000853:Wintersun - GotT Patch.esp
+      - Name: ''
+      - Name: ''
+        Object: 000855:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 0B1C67:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 0F8BEF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDB07:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A7A5C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 08E498:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 08E491:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_DynamicStat1
+      Data:
+      - ''
+      - Spells Learned
+      - ''
+      - Animals Killed
+      - ''
+      - ''
+      - Locations Discovered
+      - ''
+      - ''
+      - ''
+      - Locations Discovered
+      - ''
+      - ''
+      - Weapons Made
+      - People Killed
+      - Jail Escapes
+      - Souls Trapped
+      - ''
+      - Poisons Used
+      - ''
+      - ''
+      - Weapons Improved
+      - Undead Killed
+      - ''
+      - ''
+      - ''
+      - Books Read
+      - ''
+      - ''
+      - ''
+      - Murders
+      - Dungeons Cleared
+      - ''
+      - ''
+      - ''
+      - Ingredients Harvested
+      - ''
+      - ''
+      - ''
+      - ''
+      - People Killed
+      - Locks Picked
+      - ''
+      - Locks Picked
+      - ''
+      - Food Eaten
+      - Weapons Improved
+      - Daedra Killed
+      - ''
+      - ''
+      - Locations Discovered
+      - Magic Items Made
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Persuasions
+      - ''
+      - Poisons Used
+      - ''
+      - Magic Items Made
+      - ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_DynamicStat1_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+        Object: 019B6B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 065C0B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 219B56:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0935A9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 09D7E4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 40A411:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A290E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0C6091:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 0C60A6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0CB1E2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0F8BF3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 144D5C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 130905:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 177817:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8BFD:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 386907:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E7058:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 1DCE15:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 1DCE17:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 26FD3D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 36D39F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 3EBD87:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD84:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8BF3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 0A7A5C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 3EBD84:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_DynamicStat2
+      Data:
+      - ''
+      - ''
+      - Magic Items Made
+      - Locations Discovered
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Training Sessions
+      - Murders
+      - ''
+      - Animals Killed
+      - ''
+      - Intimidations
+      - ''
+      - ''
+      - ''
+      - Dungeons Cleared
+      - ''
+      - ''
+      - ''
+      - Spells Learned
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Food Eaten
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Locations Discovered
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Dungeons Cleared
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_DynamicStat2_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 13FC57:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 01ECC3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 09D7DF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D7E5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 149E72:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 0C60A7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0B1C66:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8BF6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8BFC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1CDAF7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0B1C66:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_BlockDecay
+      Object: 1B961A:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_CurrentHermaThreshold
+      Object: 190D87:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_DestinyActivated
+      Object: 17C921:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_HermaThresholdJump
+      Object: 190D88:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_MehrunesExplodes
+      Object: 190D78:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_MehrunesExplodesMax
+      Object: 190D79:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_PeryiteBreathWeaponUsed
+      Object: 3DCA62:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effect_Global_RuptgaCounter
+      Object: 1726F2:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Effects_Message_Herma_PerkPoint
+      Object: 190D89:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Explosion
+      Object: 019BB1:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global
+      Object: 00F93D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global_Fractional
+      Object: 014A56:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global_Fractional2
+      Object: 03D340:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global_Fractional3
+      Object: 060AE8:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global_Fractional4
+      Object: 14EF9D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global_FractionalHircine
+      Object: 21EC5C:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Favor_Global_FractionalPig
+      Object: 08427B:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_FavorBase_Global
+      Objects:
+      - Name: ''
+        Object: 20F921:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 20F922:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 20F923:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 20F924:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 20F925:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 20F926:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 20F927:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000890:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_FavorCurve_Global
+      Object: 1A520E:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_FavorDisplay
+      Objects:
+      - Name: ''
+        Object: 01ECAA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 01ECAB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 01ECAC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE1F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE1D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE1E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE20:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE21:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE22:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE23:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE24:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE25:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE26:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE27:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE28:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE29:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE2A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE2B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE2C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE2D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 06FE2E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2913:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2914:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2915:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2916:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2917:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2918:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2919:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A291A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A291B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A291C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A291D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A291E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A291F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2920:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2921:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2922:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2923:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B965D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B965E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B965F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9660:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9661:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9662:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1B9663:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0A2925:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005E1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005E2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005E3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005E0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD6D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD6E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000844:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 000845:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 000846:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 000804:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000814:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000821:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000832:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000850:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00085C:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00086D:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00088B:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_FavorDrain_Global
+      Object: 00F93E:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WSN_FavoredDiminishTarget
+      Data: 200
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_FavoredRace0
+      Objects:
+      - Name: ''
+      - Name: ''
+        Object: 013743:Skyrim.esm
+      - Name: ''
+      - Name: ''
+        Object: 013749:Skyrim.esm
+      - Name: ''
+      - Name: ''
+        Object: 013743:Skyrim.esm
+      - Name: ''
+        Object: 013742:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013741:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013742:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013742:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013747:Skyrim.esm
+      - Name: ''
+      - Name: ''
+        Object: 013743:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013741:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013740:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013746:Skyrim.esm
+      - Name: ''
+        Object: 013745:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013746:Skyrim.esm
+      - Name: ''
+        Object: 013743:Skyrim.esm
+      - Name: ''
+        Object: 013742:Skyrim.esm
+      - Name: ''
+        Object: 013742:Skyrim.esm
+      - Name: ''
+        Object: 013742:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 013747:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_FavoredRace1
+      Objects:
+      - Name: ''
+      - Name: ''
+        Object: 088840:Skyrim.esm
+      - Name: ''
+      - Name: ''
+        Object: 088884:Skyrim.esm
+      - Name: ''
+      - Name: ''
+        Object: 088840:Skyrim.esm
+      - Name: ''
+        Object: 013742:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 08883C:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 08883D:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 08883D:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0A82B9:Skyrim.esm
+      - Name: ''
+      - Name: ''
+        Object: 088840:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 08883C:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 08883A:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 088794:Skyrim.esm
+      - Name: ''
+        Object: 088845:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 088794:Skyrim.esm
+      - Name: ''
+        Object: 088840:Skyrim.esm
+      - Name: ''
+        Object: 08883D:Skyrim.esm
+      - Name: ''
+        Object: 08883D:Skyrim.esm
+      - Name: ''
+        Object: 08883D:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0A82B9:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_FavorFavoredRaceMult_Global
+      Object: 144D59:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_FavorMeditation_Global
+      Object: 00F940:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Help_Message_Apostasy
+      Object: 019B6E:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Help_Message_BecomeFavored
+      Object: 014A58:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Help_Message_BecomeUnfavored
+      Object: 019B6D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Help_Message_WorshipBasics
+      Object: 014A57:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Help_Message_WorshipBasics_Clavicus
+      Object: 0E475D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Help_Message_WorshipBasics_Vaermina
+      Object: 09D7F3:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Help_Message_WorshipBasics_Yokudan
+      Object: 1E703D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WSN_HourglassMult
+      Data: 0.8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Item_ElvenLamp_Effect_Ench
+      Object: 25B916:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Item_Hourglass_Effect_Ench
+      Object: 279F58:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptFloatListProperty
+      Name: WSN_LastUsedFakeGameHours
+      Data:
+      - -1
+      - -1
+      - -1
+      - -1
+      - -1
+      - -1
+      - -1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_MagicBlessing_Keyword_Divine
+      Object: 302DC6:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_MehrunesMessage
+      Objects:
+      - Name: ''
+        Object: 09D804:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D805:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D807:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D806:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 149E71:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Misc_Global_DisableAbandon
+      Object: 40530C:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Misc_Global_DrainMult
+      Object: 40530B:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Misc_Global_FavorMod
+      Object: 40530D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Misc_Global_MeditateMult
+      Object: 40530A:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Misc_Message_DidNotMeditate
+      Object: 40530F:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Misc_TheHist_Boon1_Spell_ProcOnSelf
+      Object: 368294:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Daedra_Vaermina_MeditationMult
+      Object: 219B54:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Divine_Akatosh_FavorPerLevelUp
+      Object: 019B81:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Divine_Mara_FavorIfHouseOwned
+      Object: 144D5D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Divine_Mara_FavorIfMarried
+      Object: 144D6C:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Khajiit_RiddleThar_FavorFromMinAttribute
+      Object: 1E705D:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Khajiit_RiddleThar_FavorFromMinSkills
+      Object: 1E705C:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Misc_StAlessia_FavorIfHasFollower
+      Object: 36D3AD:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Redguard_Morwha_FavorIfMarried
+      Object: 1CDADD:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_DrainRateMult_1_Daedra_SheoOverride
+      Object: 25B907:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_DrainRateMult_DuringBeneficialBuff
+      Object: 20A7F1:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_DrainRateMult_DuringBeneficialState
+      Object: 20A7F2:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_GainRateModifierBase
+      Object: 20A7EE:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_GainRateModifierCap
+      Object: 20A7F0:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_GainRateModifierDay
+      Object: 20A7EF:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_PrayerGainFavorableWeather
+      Object: 20F91F:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_PrayerGainFavorableWeatherSuper
+      Object: 20F920:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_PrayerRateMult_1_Daedra_SheoOverride
+      Object: 25B908:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Shared_RedguardPrayerCap
+      Object: 20A7F3:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Tribunal_Almalexia_FavorPerSolstheimQuest
+      Object: 000859:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_ModifyFavor_Tribunal_Almalexia_FavorPrayerMultIfLoversComfort
+      Object: 000858:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptStringProperty
+      Name: WSN_NoDeity
+      Data: no deity
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Peryite
+      Object: 0EE9E1:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Effect_Sit_Diseased
+      Object: 0E4771:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Effect_Sit_IsInWilderness
+      Object: 21EC61:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Effect_Sit_IsWerewolf
+      Object: 181A2F:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Azura
+      Object: 019B7E:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Azura_Fail
+      Object: 019B80:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Dibella_Fail
+      Object: 149E70:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Hircine_Fail
+      Object: 21EC60:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Julianos
+      Object: 014A52:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Kynareth_Fail
+      Object: 0B1C68:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Mannimarco_Fail
+      Object: 3CD71E:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Nocturnal
+      Object: 20F928:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Nocturnal_Fail
+      Object: 0A290A:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Peryite_Fail
+      Object: 0E4772:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_RiddleThar
+      Object: 1E705E:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_RiddleThar_Fail
+      Object: 1CDAF1:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_Sithis_Fail
+      Object: 0F8BFF:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_TheAllMaker_Fail
+      Object: 3EBD8B:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_TheHist_Fail
+      Object: 36D3A0:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_TheMagnaGe
+      Object: 3EBD8C:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Message_TheMagnaGe_Fail
+      Object: 3EBD83:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Prayer_Spell
+      Object: 00F945:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_PrayerRateMult
+      Objects:
+      - Name: ''
+        Object: 2005C8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005C7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005C9:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005CA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005CD:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005CE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005CB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000892:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptFloatListProperty
+      Name: WSN_PrayerRateMultIndividual
+      Data:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1.5
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 2
+      - 1.5
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0.66
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0.66
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    - MutagenObjectType: ScriptFloatListProperty
+      Name: WSN_PreviousFavor
+      Data:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_Quest_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1A520D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1A51FF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1A00E5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 19AFC2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 3F0E9F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0008B6:WintersunNordicDivines.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptBoolListProperty
+      Name: WSN_QuestIsCompleted
+      Data:
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+      - False
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_QuestToComplete
+      Objects:
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 01F258:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 023B6C:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 002853:Dawnguard.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0179D7:Dragonborn.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 035440:Dragonborn.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 018601:Skyrim.esm
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Redguard_Ruptga_Boon1_Spell_ProcOnSelf
+      Object: 1726F3:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Shrine
+      Object: 3724C4:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Spell_Global_DivineType
+      Object: 3724C3:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_StatBuffToGains
+      Data:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - RESTORATION
+      - ILLUSION
+      - ''
+      - ''
+      - ''
+      - ''
+      - DESTRUCTION
+      - ILLUSION
+      - ''
+      - ''
+      - Sneak
+      - DESTRUCTION
+      - ''
+      - ''
+      - ''
+      - ''
+      - Smithing
+      - ''
+      - ''
+      - ''
+      - LightArmor
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - HeavyArmor
+      - TwoHanded
+      - ''
+      - ''
+      - Speechcraft
+      - ''
+      - Enchanting
+      - OneHanded
+      - ''
+      - ''
+      - Marksman
+      - Block
+      - Lockpicking
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - CONJURATION
+      - ''
+      - ALTERATION
+      - Enchanting
+      - ''
+      - Speechcraft
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Speechcraft
+      - ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_StatBuffToGains_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 074F47:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 084276:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 149E75:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 09D7FD:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0A290B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 149E73:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 14EFA8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 21EC5F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 149E82:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 149E80:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8C04:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 1CDB06:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E1F2C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1CDB0E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E7051:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAFA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 3CD71B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 3EBD8A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 000873:Wintersun - GotT Patch.esp
+      - Name: ''
+      - Name: ''
+        Object: 000874:Wintersun - GotT Patch.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8C04:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_StaticAttr
+      Data:
+      - Magicka
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - stamina
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - health
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - stamina
+      - Magicka
+      - ''
+      - health
+      - ''
+      - ''
+      - ''
+      - ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_StaticAttr_Multiplier
+      Objects:
+      - Name: ''
+        Object: 07A04F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0B1C6E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1CDB05:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0B1C6E:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 07A04F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 1CDB05:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_StaticSkills
+      Data:
+      - Mage
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - total
+      - ''
+      - ''
+      - ''
+      - warrior
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - warrior
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Mage
+      - ''
+      - ''
+      - ''
+      - Mage
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_StaticSkills_Multiplier
+      Objects:
+      - Name: ''
+        Object: 1A00DA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8C06:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 130902:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 26FD3F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 000856:Wintersun - GotT Patch.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1A00DA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_StaticStat0
+      Data:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Civil War Quests Completed
+      - Main Quests Completed
+      - ''
+      - Standing Stones Found
+      - ''
+      - ''
+      - Stores Invested In
+      - ''
+      - ''
+      - ''
+      - Words Of Power Learned
+      - ''
+      - ''
+      - ''
+      - ''
+      - Side Quests Completed
+      - Main Quests Completed
+      - ''
+      - ''
+      - ''
+      - Main Quests Completed
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Main Quests Completed
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Civil War Quests Completed
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Main Quests Completed
+      - Words Of Power Learned
+      - ''
+      - Side Quests Completed
+      - ''
+      - ''
+      - ''
+      - ''
+      - Main Quests Completed
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_StaticStat0_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 144D5F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 08E490:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 0F8BF5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 09D7DE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0B1C69:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8C07:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 0F8BF1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 0F8BF7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 1CDB03:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 26FD40:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 00085A:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 0B1C69:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+        Object: 0F8C07:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 08E490:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_StaticStat1
+      Data:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Words Of Power Learned
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_StaticStat1_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+        Object: 08937F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: WSN_StaticStat2
+      Data:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_StaticStat2_Multiplier
+      Objects:
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+      - Name: ''
+    - MutagenObjectType: ScriptStringProperty
+      Name: WSN_StringApostasy
+      Data: abandons you.
+    - MutagenObjectType: ScriptStringProperty
+      Name: WSN_StringFavored
+      Data: The mighty spirit of
+    - MutagenObjectType: ScriptStringProperty
+      Name: WSN_StringFavored2
+      Data: fills you with purpose.
+    - MutagenObjectType: ScriptStringProperty
+      Name: WSN_StringUnfavored
+      Data: The mighty presence of
+    - MutagenObjectType: ScriptStringProperty
+      Name: WSN_StringUnfavored2
+      Data: leaves you.
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_Tenet
+      Objects:
+      - Name: ''
+        Object: 1A00DC:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00D8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A520B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00DF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A5207:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 14EFA0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00F0:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A5204:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A5201:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A51FD:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00E2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 190D84:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 14EFA3:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A51FA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 14EF9B:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 190D71:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 16D5ED:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00ED:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 14EF98:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A51F7:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 16D5EA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 14EFA6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A51F4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00EB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1540B1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 181A35:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 19AFD1:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 19AFCB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 19AFBF:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 14EFAA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 18BC68:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 177819:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 19AFCE:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 25B90C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00E8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1A00D5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E1F28:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E1F3A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E1F30:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDB0C:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3868DB:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E705A:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1E7052:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDB00:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAF5:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 1CDAE2:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005E4:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005E6:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005E8:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 2005EA:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD7D:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 3EBD7F:Wintersun - Faiths of Skyrim.esp
+      - Name: ''
+        Object: 00082A:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 00082E:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 000838:Wintersun - GotT Patch.esp
+      - Name: ''
+        Object: 000806:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000816:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000823:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000834:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000845:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00085E:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 00086F:WintersunNordicDivines.esp
+      - Name: ''
+        Object: 000886:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WSN_ThresholdFavored
+      Data: 100
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_Almalexia_Boon2_Spell_ProcOnSelf
+      Object: 00087C:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_SothaSil_Boon2_DismissDwemerAutomaton
+      Object: 000866:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_SothaSil_Boon2_Effect_Menu_Spell
+      Object: 00085C:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_SothaSil_Boon2_Effect_Option1_Spider
+      Object: 00086B:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_SothaSil_Boon2_Effect_Option2_Sphere
+      Object: 00086A:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_SothaSil_Boon2_Effect_Option3_Centurion
+      Object: 000869:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_SothaSil_SummonDwarvenCenturion
+      Object: 000862:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Tribunal_SothaSil_SummonDwarvenSphere
+      Object: 000861:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: 'WSN_Tribunal_SothaSil_SummonDwarvenSpider '
+      Object: 000860:Wintersun - GotT Patch.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WSN_UpdateRate
+      Data: 1
+  Versioning:
+  - Break0
+  ExtraBindDataVersion: 0
+  FileName: ''
+Name:
+  TargetLanguage: English
+  Value: Quest to keep track of favor, current deity etc.
+Flags:
+- StartGameEnabled
+- 0x10
+Priority: 27
+QuestFormVersion: 65
+Filter: WSN\
+NextAliasID: 0

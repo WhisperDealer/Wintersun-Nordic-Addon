@@ -1,0 +1,69 @@
+FormKey: 0008AB:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Orkey_Boon2_Power_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_Orkey_CountTheYears_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FavorCost
+      Data: 15
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Radius
+      Data: 1500
+    - MutagenObjectType: ScriptIntProperty
+      Name: MaxTargets
+      Data: 20
+    - MutagenObjectType: ScriptFloatProperty
+      Name: HealthPerFavor
+      Data: 6
+    - MutagenObjectType: ScriptFloatProperty
+      Name: StaminaPerFavor
+      Data: 6
+    - MutagenObjectType: ScriptFloatProperty
+      Name: DamagePerFavor
+      Data: 0.03
+    - MutagenObjectType: ScriptFloatProperty
+      Name: MaxDamageReduction
+      Data: 0.6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeUndead
+      Object: 013796:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeDaedra
+      Object: 013797:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeDwarven
+      Object: 01397A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CastExplosion
+      Object: 019BB1:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterAura
+      Object: 0506D7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VictimShader
+      Object: 0ABEFF:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Count the Years
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Curses the living around you with rapid aging - draining Health and Stamina
+    and sapping their weapon strength, scaling with your favor with Orkey. Undead,
+    Daedra and Dwarven automatons are unaffected. Costs 15 favor.

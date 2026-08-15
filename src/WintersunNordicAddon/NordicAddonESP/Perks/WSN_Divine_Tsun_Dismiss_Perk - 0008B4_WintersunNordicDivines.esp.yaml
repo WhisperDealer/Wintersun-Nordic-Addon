@@ -1,0 +1,48 @@
+FormKey: 0008B4:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Tsun_Dismiss_Perk
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PRKF_WSN_Tsun_Dismiss
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DismissGlobal
+      Object: 0008B5:WintersunNordicDivines.esp
+  ScriptFragments:
+    FileName: PRKF_WSN_Tsun_Dismiss
+    Fragments:
+    - Unknown2: 1
+      ScriptName: PRKF_WSN_Tsun_Dismiss
+      FragmentName: Fragment_0
+Name:
+  TargetLanguage: English
+  Value: Tsun
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointAddActivateChoice
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: EqualTo
+      ComparisonValue: 1
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 0008AE:WintersunNordicDivines.esp
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: EqualTo
+      ComparisonValue: 0
+      Data:
+        MutagenObjectType: GetDeadConditionData
+  ButtonLabel:
+    TargetLanguage: English
+    Value: Dismiss
+  Flags:
+    Flags:
+    - ReplaceDefault
+  EntryPoint: Activate
+  PerkConditionTabCount: 2

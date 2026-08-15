@@ -1,0 +1,24 @@
+FormKey: 000864:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NAMara_Boon1_Spell_CloakProc
+Name:
+  TargetLanguage: English
+  Value: Spirit of the Pack
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- AreaEffectIgnoresLOS
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 000865:WintersunNordicDivines.esp
+  Data:
+    Magnitude: 99
+    Duration: 30
+- BaseEffect: 000866:WintersunNordicDivines.esp
+  Data:
+    Duration: 25

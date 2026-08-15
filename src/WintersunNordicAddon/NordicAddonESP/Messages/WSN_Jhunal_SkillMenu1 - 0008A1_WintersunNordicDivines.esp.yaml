@@ -1,0 +1,39 @@
+FormKey: 0008A1:WintersunNordicDivines.esp
+EditorID: WSN_Jhunal_SkillMenu1
+Description:
+  TargetLanguage: English
+  Value: Choose a skill for Jhunal to raise by one level.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: One-Handed
+- Text:
+    TargetLanguage: English
+    Value: Two-Handed
+- Text:
+    TargetLanguage: English
+    Value: Archery
+- Text:
+    TargetLanguage: English
+    Value: Block
+- Text:
+    TargetLanguage: English
+    Value: Smithing
+- Text:
+    TargetLanguage: English
+    Value: Heavy Armor
+- Text:
+    TargetLanguage: English
+    Value: Destruction
+- Text:
+    TargetLanguage: English
+    Value: Restoration
+- Text:
+    TargetLanguage: English
+    Value: More Skills...
+- Text:
+    TargetLanguage: English
+    Value: Cancel

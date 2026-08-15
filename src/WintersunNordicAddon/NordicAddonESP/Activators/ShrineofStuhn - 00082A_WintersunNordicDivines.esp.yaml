@@ -1,0 +1,26 @@
+FormKey: 00082A:WintersunNordicDivines.esp
+EditorID: ShrineofStuhn
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00082B:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 00081E:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -16, -16, 54
+  Second: 15, 15, 86
+Name:
+  TargetLanguage: English
+  Value: Shrine of Stuhn
+Model:
+  File: Clutter\Shrines\ShrineStendarr.nif
+  Data: 0x020000000200000000000000A9FF901A6464730081A1A13679FFEEC56464730081A1A136
+MarkerColor: '#00CC4C33'
+Flags: []

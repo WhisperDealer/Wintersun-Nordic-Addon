@@ -1,0 +1,31 @@
+FormKey: 0F335A:Children of the Sky.esp
+MajorRecordFlagsRaw: 134217728
+EditorID: ShrineOfKyne
+SkyrimMajorRecordFlags:
+- 0x8000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00080F:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 000801:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -11, -6, -26
+  Second: 11, 17, 6
+Name:
+  TargetLanguage: English
+  Value: Shrine of Kyne
+Model:
+  File: Clutter\Shrines\ShrineKyne.nif
+  Data: 0x020000000200000000000000D46BD7436464730081A1A136D8F61DA86464730081A1A136
+MarkerColor: '#00CC4C33'
+Flags: []
+MajorFlags:
+- NavMeshGenerationBoundingBox

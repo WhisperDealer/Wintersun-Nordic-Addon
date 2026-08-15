@@ -1,0 +1,25 @@
+FormKey: 0008A0:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Alduin_ShoutDamage_Perk
+Name:
+  TargetLanguage: English
+  Value: Fortify Shouts
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsInListConditionData
+        FormList: 0167D9:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.25

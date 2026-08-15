@@ -1,0 +1,26 @@
+FormKey: 000809:Ancient Nordic Temple - 12h.esp
+EditorID: ANToSShrineofMara
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 000868:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 000859:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -81, -90, -117
+  Second: 81, 95, 121
+Name:
+  TargetLanguage: English
+  Value: Shrine of Mara
+Model:
+  File: Dungeons\Nordic\Clutter\NorPuzzleKeyWolf01.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

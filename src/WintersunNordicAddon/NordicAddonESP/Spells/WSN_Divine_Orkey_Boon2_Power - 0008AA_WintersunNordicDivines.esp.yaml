@@ -1,0 +1,21 @@
+FormKey: 0008AA:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Orkey_Boon2_Power
+Name:
+  TargetLanguage: English
+  Value: Count the Years
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Curse the living around you with rapid aging - a heavy, favor-scaled
+    drain of Health and Stamina and a weapon-damage penalty, as though decades drain
+    out of them in seconds. Costs 15 favor with Orkey.
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0008AB:WintersunNordicDivines.esp
+  Data:
+    Duration: 30

@@ -1,0 +1,24 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Skyrim
+  Version: 0.40
+ModKey: WintersunNordicAddonTribunalPatch.esp
+GameRelease: SkyrimSE
+ModHeader:
+  Flags:
+  - Small
+  Author: ''
+  MasterReferences:
+  - Master: Skyrim.esm
+    FileSize: 0
+  - Master: Dawnguard.esm
+    FileSize: 0
+  - Master: Dragonborn.esm
+    FileSize: 0
+  - Master: ccasvsse001-almsivi.esm
+    FileSize: 0
+  - Master: Wintersun - Faiths of Skyrim.esp
+    FileSize: 0
+  - Master: Wintersun - GotT Patch.esp
+    FileSize: 0
+  - Master: WintersunNordicDivines.esp
+    FileSize: 0

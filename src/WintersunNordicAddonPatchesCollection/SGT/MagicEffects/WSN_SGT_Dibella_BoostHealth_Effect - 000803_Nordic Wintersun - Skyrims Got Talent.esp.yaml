@@ -1,0 +1,29 @@
+FormKey: 000803:Nordic Wintersun - Skyrims Got Talent.esp
+EditorID: WSN_SGT_Dibella_BoostHealth_Effect
+Name:
+  TargetLanguage: English
+  Value: Dibella's Encore
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: While your drum performance's blessing lasts, Health is increased by a further <mag> points.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: EqualTo
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 003351:SkyrimsGotTalent-Bards.esp
+  ComparisonValue: 1

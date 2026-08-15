@@ -1,0 +1,29 @@
+FormKey: 000858:WintersunNordicDivines.esp
+EditorID: WSN_AltarBlessing_Divine_NAMara_Effect
+Name:
+  TargetLanguage: English
+  Value: Fortify Restoration
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Keywords:
+- 0FB98C:Skyrim.esm
+- 302DC6:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+EnchantShader: 092DED:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: RestorationModifier
+  Association: 0FB98C:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Type: OnHit
+  Sound: 01702E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Restoration spells cost <mag>% less to cast.

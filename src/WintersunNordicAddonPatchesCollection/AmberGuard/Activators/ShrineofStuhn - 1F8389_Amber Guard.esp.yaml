@@ -1,0 +1,26 @@
+FormKey: 1F8389:Amber Guard.esp
+EditorID: ShrineofStuhn
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00082B:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 00081E:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -50, -41, -5
+  Second: 48, 44, 111
+Name:
+  TargetLanguage: English
+  Value: Shrine of Stuhn
+Model:
+  File: FuzzBeed\Clutter\Nordic Ruins\NorAltarWhale.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

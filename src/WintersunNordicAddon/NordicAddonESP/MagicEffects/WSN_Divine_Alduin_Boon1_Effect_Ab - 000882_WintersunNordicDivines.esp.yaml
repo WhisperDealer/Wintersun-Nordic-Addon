@@ -1,0 +1,21 @@
+FormKey: 000882:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Alduin_Boon1_Effect_Ab
+Name:
+  TargetLanguage: English
+  Value: Wrath of the World-Eater
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+PerkToApply: 000881:WintersunNordicDivines.esp
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Alduin's dominion over dragonkind flows through you - you deal 50% more damage to dragons and take 25% less damage from them.

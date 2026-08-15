@@ -1,0 +1,27 @@
+FormKey: 000849:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Orkey_Boon1_Effect_HitDrain
+Name:
+  TargetLanguage: English
+  Value: Mortality's Grip
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Keywords:
+- 000853:WintersunNordicDivines.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoDeathDispel
+BaseCost: 10
+MagicSkill: Destruction
+ResistValue: ResistMagic
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: Absorb
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> points of health from the target.

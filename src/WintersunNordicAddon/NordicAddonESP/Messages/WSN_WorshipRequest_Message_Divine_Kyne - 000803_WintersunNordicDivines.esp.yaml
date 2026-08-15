@@ -1,0 +1,29 @@
+FormKey: 000803:WintersunNordicDivines.esp
+EditorID: WSN_WorshipRequest_Message_Divine_Kyne
+Description:
+  TargetLanguage: English
+  Value: >-
+    Follow the Nordic Goddess Kyne?
+
+
+    Kyne is the goddess of wind and sky and widowed warrior-wife of Shor, she bestowed the Nords the gift of the Thu'um.
+
+
+    Follower:
+
+    Regenerate stamina in combat.
+
+
+    Tenets:
+
+    Use the Thu'um. Hunt the beasts of the wild. Complete Kyne's Sacred Trials. Never openly break the laws of Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Accept Kyne
+- Text:
+    TargetLanguage: English
+    Value: Cancel

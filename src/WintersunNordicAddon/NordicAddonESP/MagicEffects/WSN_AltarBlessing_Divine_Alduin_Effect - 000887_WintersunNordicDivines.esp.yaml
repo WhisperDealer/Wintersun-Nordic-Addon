@@ -1,0 +1,30 @@
+FormKey: 000887:WintersunNordicDivines.esp
+EditorID: WSN_AltarBlessing_Divine_Alduin_Effect
+Name:
+  TargetLanguage: English
+  Value: Fortify Shouts
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0FB98C:Skyrim.esm
+- 302DC6:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+MagicSkill: Restoration
+EnchantShader: 092DE8:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+PerkToApply: 0008A0:WintersunNordicDivines.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Type: OnHit
+  Sound: 01702D:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Your Shout damage is increased by <mag>%.

@@ -1,0 +1,26 @@
+FormKey: 00086B:Tales of Skyrim - Berserkyr.esp
+EditorID: BOS_ShrineofTsun
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 00083C:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 00082F:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -27, -52, -24
+  Second: 26, 25, 170
+Name:
+  TargetLanguage: English
+  Value: Shrine of Tsun
+Model:
+  File: COTN\clutter\stones\beartotem.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

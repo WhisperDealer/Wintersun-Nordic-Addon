@@ -1,0 +1,59 @@
+FormKey: 000805:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Kyne_Tenets_Effect_Ab
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_TalosScript_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicShout
+      Object: 046B99:Skyrim.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: WSN_ActuallyShouts
+      Objects:
+      - Name: ''
+        Object: 048AD0:Skyrim.esm
+      - Name: ''
+        Object: 048AD1:Skyrim.esm
+      - Name: ''
+        Object: 048AD2:Skyrim.esm
+      - Name: ''
+        Object: 05F6EB:Skyrim.esm
+      - Name: ''
+        Object: 05F6EC:Skyrim.esm
+      - Name: ''
+        Object: 05F6ED:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_FavorMod_Global
+      Object: 089381:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+  - Name: WSN_Divine_NordicLaws_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_PenaltyPerBounty
+      Object: 06AD14:Wintersun - Faiths of Skyrim.esp
+Name:
+  TargetLanguage: English
+  Value: Tenets of Kyne
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Use the Thu'um. Hunt the beasts of the wild. Complete Kyne's Sacred Trials. Never openly break the laws of Skyrim.

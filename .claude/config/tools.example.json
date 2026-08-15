@@ -1,5 +1,5 @@
 {
-  "$comment": "Workspace tool paths + settings. COPY to tools.json (gitignored) and fill in for your machine. Populate/refresh automatically with the `modlist-install` skill, or edit by hand. Use forward slashes; they work fine in PowerShell.",
+  "$comment": "Workspace tool paths + settings. COPY to tools.json (gitignored) and fill in for your machine. Use forward slashes; they work fine in PowerShell.",
 
   "modlistRoot": "",
   "_modlistRoot_help": "Root of the installed Wabbajack modlist (the MO2 instance: contains ModOrganizer.exe, mods/, profiles/, tools/). Leave blank if you are not using a modlist and set the explicit tool paths below instead.",
@@ -43,7 +43,7 @@
   "_modlistsRoot_help": "Parent folder of MO2 instances you install built mods into for testing (e.g. STD, LoreRim, Baseline). May be the same as modlistRoot's parent.",
 
   "modsDir": "",
-  "_modsDir_help": "The MO2 'mods' folder the `mod-deploy` skill copies dist/<ModName>/ into, e.g. C:/modding/modlists/STD/mods. Set this rather than letting anything search for it.",
+  "_modsDir_help": "The MO2 'mods' folder the `mod-deploy` skill copies dist/<ModName>/ into, e.g. C:/modding/Baseline/mods. Set this rather than letting anything search for it.",
   "deployModName": "",
   "_deployModName_help": "EXACT folder name to create under modsDir, e.g. 'My-Mod-Name'. Frequently differs from the .esp name (spaces/dashes/case). A mismatch here is the #1 cause of 'my change never showed up in-game' - MO2 simply doesn't see the folder and the game runs fine without it.",
 

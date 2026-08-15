@@ -1,0 +1,32 @@
+FormKey: 00084B:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Orkey_Boon1_Perk
+Name:
+  TargetLanguage: English
+  Value: Mortality's Grip
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 44
+  EntryPoint: ApplyCombatHitSpell
+  PerkConditionTabCount: 3
+  Spell: 00084A:WintersunNordicDivines.esp
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 55
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 000853:WintersunNordicDivines.esp
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  ActorValue: VoiceRate
+  Value: 0.1
+  Modification: MultiplyOnePlusAVMult

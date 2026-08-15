@@ -1,0 +1,29 @@
+FormKey: 00086C:WintersunNordicDivines.esp
+EditorID: WSN_WorshipRequest_Message_Divine_NADibella
+Description:
+  TargetLanguage: English
+  Value: >-
+    Follow the Nordic Goddess Dibella?
+
+
+    Dibella is the Nordic Goddess of beauty, art, and passion.
+
+
+    Follower:
+
+    Your Speech skill is raised, scales with favor.
+
+
+    Tenets:
+
+    Persuade others. Craft enchanted items. Hone your speechcraft. Never openly break the laws of Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Accept Dibella
+- Text:
+    TargetLanguage: English
+    Value: Cancel

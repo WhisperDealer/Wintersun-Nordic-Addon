@@ -1,0 +1,20 @@
+FormKey: 000817:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Jhunal_Boon1_Effect_Ab
+Name:
+  TargetLanguage: English
+  Value: Runic Wards
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistMagic
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Resist <mag>% of magic.

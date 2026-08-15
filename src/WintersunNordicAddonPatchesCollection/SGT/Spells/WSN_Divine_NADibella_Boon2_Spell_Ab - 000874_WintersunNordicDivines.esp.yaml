@@ -1,0 +1,27 @@
+FormKey: 000874:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NADibella_Boon2_Spell_Ab
+Name:
+  TargetLanguage: English
+  Value: Devotee of Dibella
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 000803:Nordic Wintersun - Skyrims Got Talent.esp
+  Data:
+    Magnitude: 15
+- BaseEffect: 000804:Nordic Wintersun - Skyrims Got Talent.esp
+  Data:
+    Magnitude: 15
+- BaseEffect: 000805:Nordic Wintersun - Skyrims Got Talent.esp
+  Data:
+    Magnitude: 25
+- BaseEffect: 000806:Nordic Wintersun - Skyrims Got Talent.esp
+  Data:
+    Magnitude: 25

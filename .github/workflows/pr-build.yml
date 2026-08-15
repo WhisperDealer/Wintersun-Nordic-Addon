@@ -4,7 +4,8 @@ name: PR Test Build
 # them to the PR as a downloadable GitHub Actions artifact + a sticky comment linking to it. Each new
 # push deletes the previous artifact and uploads a fresh one; merging/closing the PR deletes it.
 # The main/tag release pipeline lives in build.yml and is unaffected.
-# Shared build steps live in the composite action .github/actions/build-mod-archives/.
+# Shared build steps live in the composite action .github/actions/build-mod-archives/, which reads
+# the Spriggit CLI version from .spriggit - do not pin it here.
 
 on:
   pull_request:
@@ -20,7 +21,6 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  SPRIGGIT_VERSION: '0.40.0'
   ARTIFACT_NAME: pr-${{ github.event.pull_request.number }}-test-builds
   COMMENT_MARKER: '<!-- pr-test-build -->'
 
@@ -30,7 +30,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Delete previous test-build artifacts for this PR
         shell: pwsh
@@ -46,11 +46,10 @@ jobs:
       - name: Build mod archives
         uses: ./.github/actions/build-mod-archives
         with:
-          spriggit-version: ${{ env.SPRIGGIT_VERSION }}
           github-token: ${{ github.token }}
 
       - name: Upload test builds
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: build/dist/*.7z
@@ -102,7 +101,8 @@ jobs:
 
   cleanup:
     if: github.event.action == 'closed'
-    runs-on: windows-latest
+    # No build here - just two gh API calls, so the cheaper/faster Linux runner is enough.
+    runs-on: ubuntu-latest
     steps:
       - name: Delete test-build artifacts for this PR
         shell: pwsh

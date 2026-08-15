@@ -1,0 +1,9 @@
+MutagenObjectType: GlobalFloat
+FormKey: 000890:WintersunNordicDivines.esp
+MajorRecordFlagsRaw: 64
+EditorID: WSN_FavorBase_Global_Nordic
+SkyrimMajorRecordFlags:
+- 0x40
+MajorFlags:
+- Constant
+Data: 20

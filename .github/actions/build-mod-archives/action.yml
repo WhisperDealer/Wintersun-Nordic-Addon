@@ -6,22 +6,45 @@ description: >
 
 inputs:
   spriggit-version:
-    description: Spriggit CLI release to download/cache.
+    description: >
+      Spriggit CLI release to download/cache. Leave empty (the default) to use the version pinned
+      in the repo's .spriggit file - that is the version the committed YAML was written with, so
+      keeping the two in sync is what guarantees byte-identical plugins.
     required: false
-    default: '0.40.0'
+    default: ''
   github-token:
     description: Token used by `gh release download` to fetch the Spriggit CLI.
     required: true
 
+outputs:
+  spriggit-version:
+    description: The Spriggit CLI version actually used.
+    value: ${{ steps.version.outputs.version }}
+
 runs:
   using: composite
   steps:
+    - name: Resolve Spriggit version
+      id: version
+      shell: pwsh
+      run: |
+        $v = '${{ inputs.spriggit-version }}'
+        if (-not $v) {
+          # Single source of truth: .spriggit pins the serializer the YAML was written with.
+          $v = (Get-Content .spriggit -Raw | ConvertFrom-Json).Version
+          if (-not $v) { throw "No 'Version' in .spriggit and no spriggit-version input given." }
+          Write-Host "Using Spriggit version $v from .spriggit"
+        } else {
+          Write-Host "Using Spriggit version $v from workflow input"
+        }
+        "version=$v" >> $env:GITHUB_OUTPUT
+
     - name: Cache Spriggit CLI
       id: cache-spriggit
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       with:
         path: .tools/spriggit
-        key: spriggit-cli-${{ inputs.spriggit-version }}
+        key: spriggit-cli-${{ steps.version.outputs.version }}
 
     - name: Download Spriggit CLI
       if: steps.cache-spriggit.outputs.cache-hit != 'true'
@@ -30,13 +53,13 @@ runs:
         GH_TOKEN: ${{ inputs.github-token }}
       run: |
         New-Item -ItemType Directory -Force .tools/spriggit | Out-Null
-        gh release download "${{ inputs.spriggit-version }}" `
+        gh release download "${{ steps.version.outputs.version }}" `
           --repo Mutagen-Modding/Spriggit `
           --pattern 'SpriggitCLI.zip' `
           --dir .tools `
           --clobber
         $zip = Get-ChildItem .tools -Filter 'SpriggitCLI.zip' | Select-Object -First 1
-        if (-not $zip) { throw "Spriggit Windows CLI zip (SpriggitCLI.zip) not found for ${{ inputs.spriggit-version }}" }
+        if (-not $zip) { throw "Spriggit Windows CLI zip (SpriggitCLI.zip) not found for ${{ steps.version.outputs.version }}" }
         Expand-Archive $zip.FullName -DestinationPath .tools/spriggit -Force
 
     - name: Locate Spriggit.CLI.exe
@@ -54,3 +77,15 @@ runs:
     - name: Build archives
       shell: pwsh
       run: pwsh build/build.ps1 -SpriggitCli "${{ steps.spriggit.outputs.cli }}"
+
+    - name: Summarise build
+      shell: pwsh
+      run: |
+        # Surface the archive list + hashes on the run's summary page, so a reviewer does not have
+        # to open the log (or download the artifact) to see what came out.
+        $lines = @('## Build output', '', '| Archive | Size | SHA-256 |', '|---|---|---|')
+        foreach ($f in Get-ChildItem build/dist/*.7z) {
+          $sha = (Get-FileHash $f.FullName -Algorithm SHA256).Hash.ToLower()
+          $lines += "| $($f.Name) | $('{0:N1} KB' -f ($f.Length / 1KB)) | ``$sha`` |"
+        }
+        $lines -join "`n" | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8

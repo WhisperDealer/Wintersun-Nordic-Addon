@@ -27,10 +27,10 @@ Thumbs.db
 !*.esm/
 !*.esl/
 
-# Build output only — build/staging/<release>/ is NOT ignored: it holds the committed FOMOD source
-# under build/staging/<release>/fomod/, so the tree in git looks like the real installed mod folder.
-# The derived parts inside it (.esp, compiled .pex) are still caught by the *.esp/*.esm/*.esl/*.pex
-# rules below. Only the packed archives are ignored here.
+# Build output only — the build SCRIPTS (build/build.ps1, build/manifest.json) and the committed
+# FOMOD source under build/releases/<name>/fomod/ stay tracked; just the derived staging tree and
+# packed archives are ignored.
+/build/staging/
 /build/dist/
 
 # Bethesda archives — large binaries, never commit. Extract scripts with bsa-extract.
@@ -40,22 +40,29 @@ Thumbs.db
 # Packaged release archives (Nexus uploads etc.) — large binaries, rebuild from source.
 *.7z
 
-# Packaging build artifacts — derivable, do NOT commit.
-# Source of truth = Spriggit YAML + src/<ModName>/Scripts/source/*.psc.
+# Papyrus & packaging build artifacts — derivable, do NOT commit. Source of truth =
+# the Spriggit YAML under src/ + src/WintersunNordicAddon/NordicAddonScripts/source/*.psc.
+*.pex
 /dist/
 
-# Compiled Papyrus is ignored BY DEFAULT...
-*.pex
+# Spriggit CLI downloaded by the CI composite action (cached, never committed).
+/.tools/
 
-# ...but a plugin that ships scripts must opt its compiled folder back in, because CI cannot run
-# the Creation Kit compiler (it needs the licensed base-game script source) and therefore packages
-# the committed .pex as-is. Recompile and re-commit whenever a .psc changes — build/build.ps1 fails
-# if a .pex is MISSING but cannot tell that one is STALE. See "CI build & release" in README.md.
-#
-# Add one pair of lines per script-shipping plugin (the /mod-new-plugin skill does this for you):
-!src/ExampleMod/Scripts/compiled/
-!src/ExampleMod/Scripts/compiled/*.pex
+# EXCEPTION: the addon's canonical compiled scripts ARE committed so cloud CI can
+# package without a Creation Kit. Recompile + commit these whenever a .psc changes
+# (see the "CI build" section in README.md); build/build.ps1 fails if any are missing.
+!src/WintersunNordicAddon/NordicAddonScripts/compiled/
+!src/WintersunNordicAddon/NordicAddonScripts/compiled/*.pex
 
-# Reference decompiles — vanilla and third-party plugins serialized ONLY for FormKey lookups.
-# Large, regenerated locally from each machine's own copy of the source mod, never committed.
+# Vanilla / reference decompiles — large, regenerated from local plugins, do NOT commit.
+# These are third-party/vanilla mods you serialize ONLY for FormKey lookups.
+# Add one block per reference master you decompile (examples commented out below).
+/_reference/
+/_reference/*
+# This workspace's reference tree (Wintersun ESP + scripts, etc.) — same rule:
+# third-party lookup material, re-serialized locally from each machine's own copy.
 /reference/
+# e.g.
+# /skyrimBaseGame/
+# /skyrimBaseGameUpdate/
+# /<sourceModName>/

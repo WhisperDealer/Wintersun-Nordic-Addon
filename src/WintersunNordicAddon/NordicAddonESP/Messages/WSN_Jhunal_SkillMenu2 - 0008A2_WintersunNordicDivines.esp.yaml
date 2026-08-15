@@ -1,0 +1,39 @@
+FormKey: 0008A2:WintersunNordicDivines.esp
+EditorID: WSN_Jhunal_SkillMenu2
+Description:
+  TargetLanguage: English
+  Value: Choose a skill for Jhunal to raise by one level.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Conjuration
+- Text:
+    TargetLanguage: English
+    Value: Alteration
+- Text:
+    TargetLanguage: English
+    Value: Illusion
+- Text:
+    TargetLanguage: English
+    Value: Enchanting
+- Text:
+    TargetLanguage: English
+    Value: Light Armor
+- Text:
+    TargetLanguage: English
+    Value: Sneak
+- Text:
+    TargetLanguage: English
+    Value: Lockpicking
+- Text:
+    TargetLanguage: English
+    Value: Pickpocket
+- Text:
+    TargetLanguage: English
+    Value: More Skills...
+- Text:
+    TargetLanguage: English
+    Value: Back

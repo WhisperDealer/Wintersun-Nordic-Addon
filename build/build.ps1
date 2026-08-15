@@ -3,12 +3,18 @@
   Build this workspace's release archives from Spriggit YAML + committed .pex.
 
 .DESCRIPTION
-  Data-driven by build/manifest.json - the script contains no mod-specific names. build/staging/<release>/
-  is a committed tree: only its fomod/ subfolder is source (checked into git); the rest is derived and
-  regenerated on every run. For each release:
-    1. verifies the committed build/staging/<release>/fomod/ exists (does not touch it)
-    2. deserializes each plugin's YAML -> <release>/<dest>.esp via the Spriggit CLI (overwriting any stale copy)
-    3. copies the release's committed compiled .pex into its Scripts/ folder (overwriting any stale copy)
+  Data-driven by build/manifest.json - the script contains no mod-specific names.
+
+  Source vs. derived:
+    build/releases/<release>/fomod/   COMMITTED source (the installer XML + any images)
+    build/staging/<release>/          fully DERIVED, gitignored, wiped and rebuilt every run
+    build/dist/<archiveName>.7z       DERIVED, gitignored
+
+  For each release:
+    1. wipes build/staging/<release>/ and copies build/releases/<release>/fomod/ into it
+       (a release with "fomod": false skips that and ships a plain archive)
+    2. deserializes each plugin's YAML -> <release>/<dest>.esp via the Spriggit CLI
+    3. copies the release's committed compiled .pex into its Scripts/ folder
     4. compresses build/staging/<release>/ -> build/dist/<archiveName>.7z
   Then writes a markdown build report to arch-docs/build-report.md.
 
@@ -16,8 +22,13 @@
   GitHub Actions (pass -SpriggitCli explicitly). It never invokes the Papyrus compiler - the
   .pex are expected to be committed and current (recompile + commit when a .psc changes).
 
+  Windows PowerShell 5.1 and PowerShell 7 both run this script.
+
 .PARAMETER SpriggitCli
   Path to Spriggit.CLI.exe. Defaults to $Tools.spriggitCli from tools.json when available.
+
+.PARAMETER FomodDir
+  Root of the committed FOMOD sources, one folder per release name. Default build/releases.
 
 .PARAMETER CheckFomod
   Only verify manifest <-> fomod/ModuleConfig.xml parity, then exit (no build).
@@ -25,6 +36,7 @@
 [CmdletBinding()]
 param(
     [string]$SpriggitCli,
+    [string]$FomodDir    = 'build/releases',
     [string]$OutDir      = 'build/staging',
     [string]$ArchiveDir  = 'build/dist',
     [string]$Report      = 'arch-docs/build-report.md',
@@ -142,7 +154,7 @@ function Write-Report {
         [void]$sb.AppendLine("| $($p.Release) | $($p.Dest) | $($p.Records) | $($p.Masters) |")
     }
     [void]$sb.AppendLine('')
-    [void]$sb.AppendLine("## Scripts - $(@($Scripts).Count) .pex")
+    [void]$sb.AppendLine("## Scripts - $(@($Scripts).Count) file(s)")
     [void]$sb.AppendLine('')
     foreach ($s in $Scripts) { [void]$sb.AppendLine("- $s") }
     [void]$sb.AppendLine('')
@@ -157,6 +169,81 @@ function Write-Report {
 # ---- Load manifest ---------------------------------------------------------
 $manifestPath = Join-Path $PSScriptRoot 'manifest.json'
 $manifest = Get-Content $manifestPath -Raw | ConvertFrom-Json
+
+function Test-ReleaseWantsFomod {
+    param($Release)
+    if ($Release.PSObject.Properties.Name -contains 'fomod') { return [bool]$Release.fomod }
+    return $true
+}
+
+function Get-ReleaseFomodSource {
+    param($Release)
+    # Committed installer source for a release: build/releases/<release name>/fomod/
+    return (Join-Path (Join-Path $RepoRoot $FomodDir) (Join-Path $Release.name 'fomod'))
+}
+
+function Get-ReleaseScriptSets {
+    param($Owner)
+    # 'scripts' may be a single {from,to} object or an array of them, at release *or* plugin level.
+    # Each entry copies build artifacts into the staging tree; 'from' is either a folder (all files
+    # matching 'pattern', default *.pex) or a single file. Normalising here keeps the two call sites
+    # identical and lets a release ship more than one kind of artifact (e.g. Scripts/ + SKSE/).
+    if ($Owner.PSObject.Properties.Name -notcontains 'scripts' -or -not $Owner.scripts) { return @() }
+    return @($Owner.scripts)
+}
+
+function Copy-ScriptSet {
+    param($Set, [string]$StageDir, [string]$Label)
+    # Copies one manifest 'scripts' entry into the staging tree and returns the file names copied.
+    # An empty or missing source is fatal: the archive would otherwise ship silently script-less,
+    # which only shows up as "the mod does nothing" hours later in-game.
+    $from    = Join-Path $RepoRoot $Set.from
+    $pattern = '*.pex'
+    if ($Set.PSObject.Properties.Name -contains 'pattern' -and $Set.pattern) { $pattern = $Set.pattern }
+    if (-not (Test-Path $from)) {
+        throw "Build artifact missing: $from. Recompile (.psc -> .pex) and commit it (see README 'CI build & release')."
+    }
+    $dst = Join-Path $StageDir $Set.to
+    New-Item -ItemType Directory -Force $dst | Out-Null
+
+    if (Test-Path $from -PathType Leaf) {
+        Copy-Item $from $dst -Force
+        Write-Host "$Label script $(Split-Path -Leaf $from) -> $($Set.to)/"
+        return @(Split-Path -Leaf $from)
+    }
+
+    $files = @(Get-ChildItem $from -Filter $pattern -File -ErrorAction SilentlyContinue)
+    if ($files.Count -eq 0) {
+        throw "No files matching '$pattern' in $from. Recompile and commit them before building."
+    }
+    Copy-Item (Join-Path $from $pattern) $dst -Force
+    Write-Host "$Label copied $($files.Count) $pattern -> $($Set.to)/"
+    return @($files.Name)
+}
+
+# ---- Manifest sanity -------------------------------------------------------
+# Cheap checks that turn a silently wrong archive into an up-front failure.
+$seenArchives = @{}
+foreach ($rel in $manifest.releases) {
+    if (-not $rel.name)        { throw "manifest.json: a release has no 'name'." }
+    if (-not $rel.archiveName) { throw "manifest.json: release '$($rel.name)' has no 'archiveName'." }
+    if ($seenArchives.ContainsKey($rel.archiveName)) {
+        throw "manifest.json: two releases share archiveName '$($rel.archiveName)' - the second would overwrite the first."
+    }
+    $seenArchives[$rel.archiveName] = $true
+
+    $seenDests = @{}
+    foreach ($p in $rel.plugins) {
+        if (-not $p.yamlSource) { throw "manifest.json: a plugin in '$($rel.name)' has no 'yamlSource'." }
+        if (-not $p.dest)       { throw "manifest.json: '$($p.yamlSource)' has no 'dest'." }
+        if ($seenDests.ContainsKey($p.dest)) {
+            throw "manifest.json: release '$($rel.name)' builds '$($p.dest)' twice."
+        }
+        $seenDests[$p.dest] = $true
+        $src = Join-Path $RepoRoot $p.yamlSource
+        if (-not (Test-Path $src)) { throw "manifest.json: yamlSource does not exist: $($p.yamlSource)" }
+    }
+}
 
 # ---- FOMOD parity check ----------------------------------------------------
 function Get-JpegEncoding {
@@ -189,9 +276,14 @@ function Test-FomodParity {
     $ok = $true
     foreach ($rel in $manifest.releases) {
         # A release may opt out of a FOMOD entirely with "fomod": false - there is nothing to check.
-        if (($rel.PSObject.Properties.Name -contains 'fomod') -and (-not $rel.fomod)) { continue }
-        $fomod = Join-Path $RepoRoot (Join-Path (Join-Path 'build/staging' $rel.name) 'fomod/ModuleConfig.xml')
-        if (-not (Test-Path $fomod)) { Write-Warning "No ModuleConfig.xml for '$($rel.name)'"; continue }
+        if (-not (Test-ReleaseWantsFomod $rel)) { continue }
+        $fomodSrc = Get-ReleaseFomodSource $rel
+        $fomod    = Join-Path $fomodSrc 'ModuleConfig.xml'
+        if (-not (Test-Path $fomod)) {
+            Write-Host "  [NO MODULECONFIG] $($rel.name): expected $fomod" -ForegroundColor Red
+            $ok = $false
+            continue
+        }
         [xml]$xml = Get-Content $fomod -Raw
         $fomodEsps = $xml.SelectNodes('//file') |
             ForEach-Object { $_.source } |
@@ -225,7 +317,9 @@ function Test-FomodParity {
         # notice. Both failure modes below have actually shipped from this repo. The rest of the
         # recipe (needing an <installSteps> block at all) is in CLAUDE.md under
         # "FOMOD images that actually render in MO2".
-        $stageDir = Split-Path -Parent (Split-Path -Parent $fomod)
+        # Images resolve against the release's ARCHIVE ROOT - which in the committed source tree is
+        # build/releases/<name>/ (the folder that becomes the root of the .7z).
+        $archiveRoot = Split-Path -Parent $fomodSrc
         $imageNodes = @($xml.SelectNodes('//moduleImage')) + @($xml.SelectNodes('//image'))
         # Distinct paths only: one image is typically referenced by both <moduleImage> and every
         # plugin's <image>, and repeating an identical complaint per node buries the real list.
@@ -234,12 +328,12 @@ function Test-FomodParity {
         foreach ($imgPath in $imagePaths) {
             # path= is relative to the ARCHIVE ROOT, so it must carry the "fomod/" prefix itself.
             $relPath = $imgPath.Replace('\', '/').TrimStart('/')
-            $abs = Join-Path $stageDir $relPath
+            $abs = Join-Path $archiveRoot $relPath
             if (-not (Test-Path $abs)) {
                 Write-Host "  [IMAGE NOT FOUND] $($rel.name): path=`"$imgPath`" resolves to nothing" -ForegroundColor Red
                 # The overwhelmingly likely cause: the "fomod/" prefix was omitted, because the path
                 # looks right sitting inside fomod/ModuleConfig.xml. Say so instead of just failing.
-                if (Test-Path (Join-Path (Join-Path $stageDir 'fomod') $relPath)) {
+                if (Test-Path (Join-Path $fomodSrc $relPath)) {
                     Write-Host "                   -> did you mean `"fomod\$($relPath.Replace('/','\'))`"? path= is relative to the archive root, not to fomod/." -ForegroundColor Red
                 }
                 $ok = $false
@@ -283,27 +377,27 @@ foreach ($rel in $manifest.releases) {
     Write-Host "`n=== Release: $($rel.name) ===" -ForegroundColor Cyan
     $stageDir = Join-Path $stagingAbs $rel.name
 
-    # 1. verify the committed fomod/ is in place (it lives directly in build/staging and is never
-    #    wiped by this script - only the derived parts below are regenerated).
-    #
-    #    A release may opt out with "fomod": false in the manifest and ship a plain archive instead.
-    #    That is the right shape whenever the install has nothing to ask - a single .esp with no
-    #    options. Without a committed fomod/ the stage dir is not tracked by git (it holds only
-    #    derived files), so create it here.
-    $wantsFomod = $true
-    if ($rel.PSObject.Properties.Name -contains 'fomod') { $wantsFomod = [bool]$rel.fomod }
-    $fomodDir = Join-Path $stageDir 'fomod'
-    if ($wantsFomod) {
-        if (-not (Test-Path $fomodDir)) { throw "Missing committed fomod/ for '$($rel.name)' at $fomodDir" }
-    } else {
-        if (Test-Path $fomodDir) { throw "'$($rel.name)' sets fomod: false but $fomodDir still exists - delete it" }
-        New-Item -ItemType Directory -Force $stageDir | Out-Null
-    }
+    # 1. rebuild the stage dir from scratch. Everything in build/staging/ is derived, so wiping it
+    #    is what guarantees a renamed dest, a deleted patch or a removed .pex cannot survive into
+    #    the new archive as a leftover file.
+    Remove-Item $stageDir -Recurse -Force -ErrorAction SilentlyContinue
+    New-Item -ItemType Directory -Force $stageDir | Out-Null
 
-    # Clear everything else in the stage dir (previous run's .esp/.pex) so stale derived files
-    # from a renamed dest/script never survive into the new archive - fomod/ is left untouched.
-    Get-ChildItem $stageDir -Force | Where-Object { $_.Name -ne 'fomod' } |
-        Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+    #    Copy in the committed installer source. A release may opt out with "fomod": false and ship
+    #    a plain archive instead - the right shape whenever the install has nothing to ask (a single
+    #    .esp with no options).
+    $wantsFomod = Test-ReleaseWantsFomod $rel
+    $fomodSrc   = Get-ReleaseFomodSource $rel
+    if ($wantsFomod) {
+        if (-not (Test-Path (Join-Path $fomodSrc 'ModuleConfig.xml'))) {
+            throw "Missing committed FOMOD for '$($rel.name)': expected $fomodSrc\ModuleConfig.xml (or set `"fomod`": false on the release)"
+        }
+        Copy-Item $fomodSrc (Join-Path $stageDir 'fomod') -Recurse -Force
+        Write-Host "  fomod  <- $FomodDir/$($rel.name)/fomod"
+    }
+    elseif (Test-Path $fomodSrc) {
+        throw "'$($rel.name)' sets fomod: false but $fomodSrc still exists - delete it"
+    }
 
     # 2. deserialize each plugin
     foreach ($p in $rel.plugins) {
@@ -326,38 +420,18 @@ foreach ($rel in $manifest.releases) {
         }
 
         # optional per-plugin scripts (a patch that ships its own committed .pex)
-        if ($p.PSObject.Properties.Name -contains 'scripts' -and $p.scripts) {
-            foreach ($s in $p.scripts) {
-                $sFrom = Join-Path $RepoRoot $s.from
-                if (-not (Test-Path $sFrom)) {
-                    throw "Plugin script missing: $sFrom. Recompile (.psc -> .pex) and commit it (see README 'CI build')."
-                }
-                $sTo = Join-Path $stageDir $s.to
-                New-Item -ItemType Directory -Force $sTo | Out-Null
-                Copy-Item $sFrom $sTo -Force
-                $scriptFiles = @($scriptFiles + (Split-Path -Leaf $sFrom)) | Sort-Object -Unique
-                Write-Host "    + script $(Split-Path -Leaf $sFrom) -> $($s.to)/"
-            }
+        foreach ($s in (Get-ReleaseScriptSets $p)) {
+            $copied = Copy-ScriptSet -Set $s -StageDir $stageDir -Label "    +"
+            # Accumulate: a plain assignment here would discard entries collected for earlier
+            # plugins, and every release after the first would clobber the previous one.
+            $scriptFiles = @($scriptFiles + $copied) | Sort-Object -Unique
         }
     }
 
-    # 3. copy committed .pex (addon only)
-    if ($rel.PSObject.Properties.Name -contains 'scripts' -and $rel.scripts) {
-        $pexSrc = Join-Path $RepoRoot $rel.scripts.from
-        $pexDst = Join-Path $stageDir $rel.scripts.to
-        if (-not (Test-Path $pexSrc)) {
-            throw "Compiled scripts folder missing: $pexSrc. Recompile (.psc -> .pex) and commit them (see README 'CI build')."
-        }
-        $pex = @(Get-ChildItem $pexSrc -Filter *.pex -File -ErrorAction SilentlyContinue)
-        if (-not $pex -or $pex.Count -eq 0) {
-            throw "No .pex found in $pexSrc. Recompile and commit them before building."
-        }
-        New-Item -ItemType Directory -Force $pexDst | Out-Null
-        Copy-Item (Join-Path $pexSrc '*.pex') $pexDst -Force
-        # Accumulate: a plain assignment here would discard the per-plugin script entries
-        # collected above, and every release after the first would clobber the previous one.
-        $scriptFiles = @($scriptFiles + $pex.Name) | Sort-Object -Unique
-        Write-Host "  copied $($pex.Count) .pex -> $($rel.scripts.to)/"
+    # 3. copy the release's committed build artifacts (the addon's compiled .pex)
+    foreach ($s in (Get-ReleaseScriptSets $rel)) {
+        $copied = Copy-ScriptSet -Set $s -StageDir $stageDir -Label "  "
+        $scriptFiles = @($scriptFiles + $copied) | Sort-Object -Unique
     }
 
     # 4. archive

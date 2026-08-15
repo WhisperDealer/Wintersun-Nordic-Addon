@@ -1,0 +1,29 @@
+FormKey: 000854:WintersunNordicDivines.esp
+EditorID: WSN_AltarBlessing_Divine_Orkey_Perk
+Name:
+  TargetLanguage: English
+  Value: Blessing of Orkey
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 45
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPAlchemyEffectHasKeywordConditionData
+        Keyword: 042509:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPAlchemyGetMakingPoisonConditionData
+      ComparisonValue: 1
+  EntryPoint: ModAlchemyEffectiveness
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.15

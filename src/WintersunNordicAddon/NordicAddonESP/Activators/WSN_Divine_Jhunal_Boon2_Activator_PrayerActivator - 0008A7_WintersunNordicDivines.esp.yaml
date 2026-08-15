@@ -1,0 +1,29 @@
+FormKey: 0008A7:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Jhunal_Boon2_Activator_PrayerActivator
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_ActivatorNode_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: WSN_Disappear
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_Spell
+      Object: 0008A8:WintersunNordicDivines.esp
+ObjectBounds:
+  First: -107, -110, -28
+  Second: 104, 110, 28
+Name:
+  TargetLanguage: English
+  Value: Scholar's Insight
+Model:
+  File: Wintersun\Kyne_Activator4.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00A98C56'
+ActivateTextOverride:
+  TargetLanguage: English
+  Value: Contemplate
+Flags: []

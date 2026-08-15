@@ -1,0 +1,25 @@
+FormKey: 00085F:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NAMara_Boon1_Effect_Ab
+Name:
+  TargetLanguage: English
+  Value: Spirit of the Pack
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 000864:WintersunNordicDivines.esp
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: In combat, your presence steels the courage of nearby allies so they will not flee.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,29 @@
+FormKey: 00085B:WintersunNordicDivines.esp
+EditorID: WSN_WorshipRequest_Message_Divine_NAMara
+Description:
+  TargetLanguage: English
+  Value: >-
+    Follow the Nordic Goddess Mara?
+
+
+    Mara is the Nordic Goddess of love, compassion, and the home.
+
+
+    Follower:
+
+    In combat, your presence steels the courage of nearby followers so they will not flee.
+
+
+    Tenets:
+
+    Be married. Fight alongside your followers. Never openly break the laws of Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Accept Mara
+- Text:
+    TargetLanguage: English
+    Value: Cancel

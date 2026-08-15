@@ -1,0 +1,21 @@
+FormKey: 0008AF:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Tsun_Boon2_Effect_Display
+Name:
+  TargetLanguage: English
+  Value: Trial by Combat
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Pray to Tsun to summon a champion of Sovngarde and be tested in single combat. Defeat them to be filled with a hero's might. Costs 20 favor with Tsun.

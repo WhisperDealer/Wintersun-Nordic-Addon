@@ -1,0 +1,42 @@
+FormKey: 000896:WintersunNordicDivines.esp
+EditorID: WSN_DistributeHornOfFirstTongues_Quest
+Name:
+  TargetLanguage: English
+  Value: Distribute Horn of First Tongues
+Flags:
+- StartGameEnabled
+- 0x10
+Priority: 100
+Filter: WSN\
+NextAliasID: 3
+Aliases:
+- ID: 0
+  Type: Location
+  Name: WSN_HornLoc
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E2:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130F8:Skyrim.esm
+    ComparisonValue: 1
+- ID: 1
+  Name: WSN_HornContainer
+  Flags: []
+  Location:
+    AliasID: 0
+    RefType: 0130F8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 2
+  Name: WSN_HornItem
+  Flags: []
+  CreateReferenceToObject:
+    Object: 000893:WintersunNordicDivines.esp
+    AliasID: 1
+    Create: In
+  VoiceTypes: Null

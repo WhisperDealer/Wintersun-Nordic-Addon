@@ -1,0 +1,39 @@
+FormKey: 00080A:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Kyne_Boon2_Effect_ShoutReset
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_Kyne_BreathOfKyne_Script
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FavorCost
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CastExplosion
+      Object: 019BB1:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AuraShader
+      Object: 10F9A6:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Breath of Kyne
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+- NoHitEffect
+MagicSkill: Restoration
+EnchantShader: 092DE8:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ShoutRecoveryMult
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Time between shouts is reduced by <mag>% for <dur> seconds.

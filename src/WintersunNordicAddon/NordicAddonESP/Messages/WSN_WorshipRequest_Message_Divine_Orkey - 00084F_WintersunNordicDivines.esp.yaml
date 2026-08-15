@@ -1,0 +1,29 @@
+FormKey: 00084F:WintersunNordicDivines.esp
+EditorID: WSN_WorshipRequest_Message_Divine_Orkey
+Description:
+  TargetLanguage: English
+  Value: >-
+    Follow the Nordic God Orkey?
+
+
+    Orkey is the god of mortality and cursed lifespans, feared for the disease of old age he laid upon the Nords.
+
+
+    Follower:
+
+    Your weapon attacks drain health from your enemies, scales with favor
+
+
+    Tenets:
+
+    Slay the living. Poison your weapons. Never openly break the laws of Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Accept Orkey
+- Text:
+    TargetLanguage: English
+    Value: Cancel

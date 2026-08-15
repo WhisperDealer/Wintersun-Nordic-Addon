@@ -1,0 +1,7 @@
+FormKey: 000804:WintersunNordicDivines.esp
+EditorID: WSN_Basic_Message_Divine_Kyne
+Description:
+  TargetLanguage: English
+  Value: 'Favor with Kyne: %.1f%%'
+INAM: 0x00000000
+DisplayTime: 2

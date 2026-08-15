@@ -1,0 +1,26 @@
+FormKey: 00590D:The Old Ways - Nordic Religion.esp
+EditorID: TOWShrineofShor
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TempleBlessingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AltarRemoveMsg
+      Object: 10E4F9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingMessage
+      Object: 107FBF:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempleBlessing
+      Object: 102EB1:Wintersun - Faiths of Skyrim.esp
+ObjectBounds:
+  First: -117, -28, -117
+  Second: 117, 28, 117
+Name:
+  TargetLanguage: English
+  Value: Shrine of Shor
+Model:
+  File: TheOldWays\clutter\shrines\TOWShrineShor.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

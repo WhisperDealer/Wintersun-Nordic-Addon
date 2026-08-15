@@ -1,0 +1,33 @@
+FormKey: 00086E:WintersunNordicDivines.esp
+EditorID: WSN_Divine_NADibella_Tenets_Effect_Ab
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_NordicLaws_Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_PenaltyPerBounty
+      Object: 06AD14:Wintersun - Faiths of Skyrim.esp
+Name:
+  TargetLanguage: English
+  Value: Tenets of Dibella
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Persuade others. Craft enchanted items. Hone your speechcraft. Never openly break the laws of Skyrim.

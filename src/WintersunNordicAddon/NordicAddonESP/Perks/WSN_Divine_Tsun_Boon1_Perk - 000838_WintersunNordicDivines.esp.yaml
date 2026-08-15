@@ -1,0 +1,42 @@
+FormKey: 000838:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Tsun_Boon1_Perk
+Name:
+  TargetLanguage: English
+  Value: Tsun
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 44
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLevelConditionData
+      ComparisonValue: 0008AD:WintersunNordicDivines.esp
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  ActorValue: VoiceRate
+  Value: 0.02
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 44
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLevelConditionData
+      ComparisonValue: 0008AD:WintersunNordicDivines.esp
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  ActorValue: VoiceRate
+  Value: -0.02
+  Modification: MultiplyOnePlusAVMult

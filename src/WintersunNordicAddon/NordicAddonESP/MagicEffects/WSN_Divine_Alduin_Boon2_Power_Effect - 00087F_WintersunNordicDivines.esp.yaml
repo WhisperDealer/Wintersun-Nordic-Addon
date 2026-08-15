@@ -1,0 +1,64 @@
+FormKey: 00087F:WintersunNordicDivines.esp
+EditorID: WSN_Divine_Alduin_Boon2_Power_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WSN_Divine_Alduin_StormPower_Script
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FavorCost
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WSN_TrackerQuest
+      Object: 005901:Wintersun - Faiths of Skyrim.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MarkerBase
+      Object: 06CD3D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MeteorProjectile
+      Object: 00088F:WintersunNordicDivines.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: SafeRadius
+      Data: 500
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Scatter
+      Data: 2500
+    - MutagenObjectType: ScriptFloatProperty
+      Name: SpawnHeight
+      Data: 4000
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StormWeather
+      Object: 0D9329:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: TargetChance
+      Data: 0.5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: TargetJitter
+      Data: 150
+    - MutagenObjectType: ScriptFloatProperty
+      Name: TargetRadius
+      Data: 3000
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WaveInterval
+      Data: 0.3
+    - MutagenObjectType: ScriptIntProperty
+      Name: Waves
+      Data: 360
+Name:
+  TargetLanguage: English
+  Value: Storm of the World-Eater
+MenuDisplayObject: 00F93C:Wintersun - Faiths of Skyrim.esp
+Flags:
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- NoHitEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Call down a storm of dragonfire on the ground before you - the World-Eater's wrath made manifest. The flames spare you but consume all else. Costs 20% of your favor with Alduin.
