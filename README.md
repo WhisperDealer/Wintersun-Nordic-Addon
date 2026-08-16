@@ -57,7 +57,7 @@ build/
   dist/<Archive>.7z                        # derived, gitignored - the shippable archives
 
 reference/                                 # gitignored: Wintersun + base-master decompiles, lookup only
-arch-docs/                                 # build report + record-pattern notes
+arch-docs/                                 # record-pattern notes
 .claude/                                   # skills, subagents, tool config (committed except tools.json)
 ```
 
@@ -151,11 +151,10 @@ mod-specific logic. For each release it:
 3. copies the committed `.pex` into `Scripts/`,
 4. packs the staging tree to `build/dist/<archiveName>.7z`,
 
-then regenerates [`arch-docs/build-report.md`](arch-docs/build-report.md) (archive hashes, per-plugin
-record counts and masters).
+then prints each archive's size and SHA-256.
 
 ```powershell
-build/build.ps1              # full build -> build/dist/*.7z + arch-docs/build-report.md
+build/build.ps1              # full build -> build/dist/*.7z (+ a size/SHA-256 summary)
 build/build.ps1 -CheckFomod  # only verify manifest <-> fomod/ModuleConfig.xml parity
 build/Test-RecordYaml.ps1    # structural lint of the record YAML (BOM/CRLF/tabs/EditorID drift)
 ```
@@ -202,7 +201,7 @@ quest's arrays.** `CLAUDE.md` lists which file answers which question.
 ## CI build & release (GitHub Actions)
 
 [`.github/workflows/build.yml`](.github/workflows/build.yml) rebuilds both archives on every push to
-`main` (publishing them to a **timestamped pre-release**) and cuts a named GitHub Release when you
+`main` — as a **smoke test only, publishing nothing** — and cuts a named GitHub Release when you
 push a `v*` tag. It also runs on `workflow_dispatch` for a manual rebuild. The shared setup+build
 steps live in the composite action [`.github/actions/build-mod-archives/`](.github/actions/build-mod-archives/action.yml),
 used by both workflows, so the build invocation exists in exactly one place.
@@ -211,9 +210,12 @@ The action reads the **Spriggit version from `.spriggit`** — the same file tha
 for the committed YAML — so CI cannot drift from what the YAML was written with. Nothing pins a
 version in the workflow files.
 
-To release: `git tag v2.0 && git push origin v2.0` → both `.7z` are attached to a Release named
-`v2.0`. The `github-release` skill also writes the changelog and cleans up the throwaway `build-*`
-pre-releases.
+To release: `git tag v2.0 && git push origin v2.0` → both `.7z` are built and attached to a Release
+named `v2.0`. The `github-release` skill drives the curated flow: changelog from the previous tag,
+tag push, watch the build, then replace CI's generated notes and mark the release Latest.
+
+**Archives reach you in exactly two ways:** a **PR artifact** while a change is in review, and a
+**`v*` tag Release** when it ships. Nothing is published from `main`.
 
 **PR test builds.** [`.github/workflows/pr-build.yml`](.github/workflows/pr-build.yml) runs the same
 build on every pull request and attaches both archives as an Actions artifact named
@@ -263,7 +265,7 @@ verified CLI paths and flags.
 | `papyrus-compile` | Compile `.psc` → `.pex` (CK `PapyrusCompiler.exe`) |
 | `package-mod` | Assemble `dist/<ModName>/` (esp + scripts) for MO2 testing |
 | `mod-deploy` | Copy the packaged mod into an MO2 instance and verify it landed |
-| `github-release` | Cut a versioned Release with changelog + assets, tidy `build-*` tags |
+| `github-release` | Cut a versioned Release — changelog, tag push, then curate CI's notes |
 
 **Subagents:**
 
