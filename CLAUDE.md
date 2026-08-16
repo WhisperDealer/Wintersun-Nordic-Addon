@@ -341,7 +341,7 @@ Two archives come out of one data-driven build (`build/manifest.json` holds all 
 
 ```powershell
 build/build.ps1 -CheckFomod   # manifest <-> ModuleConfig.xml parity (no Spriggit/7-Zip needed)
-build/build.ps1               # full build -> build/dist/*.7z + arch-docs/build-report.md
+build/build.ps1               # full build -> build/dist/*.7z (+ a size/SHA-256 summary)
 build/Test-RecordYaml.ps1     # structural YAML lint (also runs as a PostToolUse hook on save)
 ```
 
@@ -358,8 +358,9 @@ Runs under Windows PowerShell 5.1 (there is **no `pwsh` on this machine** — do
 - **CI does not compile Papyrus** and does not pin a Spriggit version: `.github/actions/build-mod-archives`
   reads it from `.spriggit`, the same file that pins the serializer for the committed YAML. Bumping
   Spriggit means bumping `.spriggit` + every `spriggit-meta.json`, and re-serializing.
-- Push to `main` → rolling pre-release; push a `v*` tag → named Release. `github-release` skill tidies
-  the throwaway `build-*` tags.
+- Push to `main` → build only, nothing published; push a `v*` tag → named Release with both archives.
+  Test builds for review are the PR artifacts. The `github-release` skill drives the tag-and-curate
+  flow.
 
 ## Gotchas
 
