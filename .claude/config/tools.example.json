@@ -43,7 +43,7 @@
   "_modlistsRoot_help": "Parent folder of MO2 instances you install built mods into for testing (e.g. STD, LoreRim, Baseline). May be the same as modlistRoot's parent.",
 
   "modsDir": "",
-  "_modsDir_help": "The MO2 'mods' folder the `mod-deploy` skill copies dist/<ModName>/ into, e.g. C:/modding/Baseline/mods. Set this rather than letting anything search for it.",
+  "_modsDir_help": "The MO2 'mods' folder the `mod-deploy` skill copies dist/<ModName>/ into, e.g. C:/modding/modlists/Baseline/mods. Set this rather than letting anything search for it.",
   "deployModName": "",
   "_deployModName_help": "EXACT folder name to create under modsDir, e.g. 'My-Mod-Name'. Frequently differs from the .esp name (spaces/dashes/case). A mismatch here is the #1 cause of 'my change never showed up in-game' - MO2 simply doesn't see the folder and the game runs fine without it.",
 

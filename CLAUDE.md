@@ -27,13 +27,22 @@ skill — change the config instead.**
 - **Modlists:** a Wabbajack list installs a full MO2 instance (its own game copy + mods + tools,
   often the **Creation Kit** and Papyrus compiler) and can be hundreds of GB — always gitignored
   (`/modlist/`, `/downloads/`). `gameRoot` is then usually `<instance>/Stock Game`.
-- **This machine** points at the MO2 instance at `C:/modding/Baseline`. Resolvable there: the
-  Creation Kit, `modsDir`, xEdit's *Edit Scripts*, LOOT, NifSkope, BethINI — plus the Spriggit CLI
-  at `C:/Tools/SpriggitCLI`. **Not present there:** `PapyrusCompiler.exe` (the `Stock Game/Papyrus
-  Compiler/` folder is empty), the base-game Papyrus source (`Data/Source/` is empty, no
-  `Scripts.zip`), `SSEEdit.exe`, `bsab`, and Champollion. Those keys carry a `_status` note in
-  `tools.json` — **so script compiling and .pex decompiling cannot run here until they are
-  installed.** Everything Spriggit- and build-related works.
+- **This machine** points at the MO2 instance at `C:/modding/modlists/Baseline` (audited
+  2026-08-30; the instance used to live at `C:/modding/Baseline` — **any note still saying that is
+  stale**). Resolvable there: the Creation Kit, `PapyrusCompiler.exe`, `modsDir`, xEdit
+  (`SSEEdit.exe`, `SSEEditQuickAutoClean.exe`, *Edit Scripts*), Synthesis, Cathedral Assets
+  Optimizer, LOOT, NifSkope, BethINI — plus the Spriggit CLI at `C:/Tools/SpriggitCLI` and ReSaver
+  in the sibling `LoreRim` instance. **Not present anywhere on this machine:** `bsab`, Champollion,
+  BSArch, Octagon, BAE — **so `.bsa` extraction and `.pex` decompiling still cannot run here.**
+- **The one thing blocking Papyrus compiling is the base-game source, not the compiler.**
+  `Stock Game/Data` has no `Source/` folder and no `Scripts.zip` — MO2 serves scripts through the
+  VFS, so the vanilla `.psc` set is not on disk, and neither is `TESV_Papyrus_Flags.flg` (the only
+  copies ship with Nemesis). Two partial sets exist and are recorded in `tools.json`'s
+  `_gameSourceScripts_status`: SKSE's `Scripts/Source` (62 SKSE-extended core types — `Actor`,
+  `Game`, `Utility`, `Math`, `Weather`, `ActiveMagicEffect`, `Perk`, `Quest`; **no** `Debug`,
+  `ReferenceAlias`, `Message`, `GlobalVariable`) and PapyrusUtil's. Drop a Steam SkyrimSE
+  `Data/Scripts.zip` into `Stock Game/Data/Source/Scripts` and compiling works for the first time;
+  add those two dirs to `importDirs` at the same time. Everything Spriggit- and build-related works.
 
 ## Workflow (round-trip)
 
@@ -275,10 +284,10 @@ Scripts go through extract → decompile → edit → compile → package. Use t
 
 | Step | Tool | Config key |
 |------|------|------------|
-| Extract `.bsa`/`.ba2` | `bsab.exe` | `$Tools.bsab` |
-| Decompile `.pex`→`.psc` | `Champollion.exe` | `$Tools.champollion` |
-| Compile `.psc`→`.pex` | `PapyrusCompiler.exe` | `$Tools.papyrusCompiler` |
-| Open Creation Kit | `CreationKit.exe` | `$Tools.creationKit` |
+| Extract `.bsa`/`.ba2` | `bsab.exe` | `$Tools.bsab` — **blank, not installed here** |
+| Decompile `.pex`→`.psc` | `Champollion.exe` | `$Tools.champollion` — **blank, not installed here** |
+| Compile `.psc`→`.pex` | `PapyrusCompiler.exe` | `$Tools.papyrusCompiler` — installed; blocked only by the missing base-game source |
+| Open Creation Kit | `CreationKit.exe` | `$Tools.creationKit` — installed |
 
 **Folder layout (this project):** `src/WintersunNordicAddon/NordicAddonScripts/source/` (committed
 `.psc`, source of truth) · `src/WintersunNordicAddon/NordicAddonScripts/compiled/` (**committed**
@@ -288,8 +297,9 @@ gitignored).
 
 > **Contract:** change a `.psc` → recompile (`/papyrus-compile`) → **commit the new `.pex`**. The
 > build fails on a *missing* `.pex` but cannot detect a *stale* one, so a forgotten recompile ships
-> silently broken scripts. Note that compiling is currently **not possible on this machine** — see
-> the tooling status above.
+> silently broken scripts. Note that compiling **still cannot run on this machine** — the compiler
+> itself is installed now, but the base-game `.psc` source and flags file are missing; see the
+> tooling status above for exactly what to drop in.
 
 ### Wintersun reference scripts — read BEFORE authoring or wiring anything
 
@@ -312,22 +322,26 @@ To grant favor from a tracked stat from your own script, write to
 `(WSN_TrackerQuest as WSN_TrackerQuest_Quest).WSN_PreviousFavor[<index>]`.
 
 **Compiler imports:** base-game source = `$Tools.gameSourceScripts`
-(extract `<gameDataDir>/Scripts.zip` once, or use what the modlist ships). Flags file: `$Tools.papyrusFlags`.
+(extract `<gameDataDir>/Scripts.zip` once, or use what the modlist ships — **neither exists here
+yet**). Flags file: `$Tools.papyrusFlags`.
 
 **Per-project import dirs** — persist in `tools.json`'s `importDirs` array (the `papyrus-compile`
 skill appends them to `-i`). Mirror here as discovered:
 
 | API / framework | Source `.psc` dir |
 |-----------------|-------------------|
-| **Wintersun types** (`WSN_TrackerQuest_Quest`, etc.) | `reference/mods/wintersun/wintersunScripts/source` — added to `importDirs`. Needed by any script that references a Wintersun type, e.g. `WSN_Divine_HornOfFirstTongues_Script`. |
+| **Wintersun types** (`WSN_TrackerQuest_Quest`, etc.) | `reference/mods/wintersun/wintersunScripts/source` — needed by any script that references a Wintersun type, e.g. `WSN_Divine_HornOfFirstTongues_Script`. **Not yet in `importDirs`:** the reference tree currently holds only `wintersunEsp`; the scripts have not been decompiled here, and a non-existent `-i` dir fails the compile. Add it once it exists. |
 | _(base only)_ | The addon's `WSN_Divine_Alduin_StormPower_Script` compiles against **base-game source only** (`ActiveMagicEffect`, `Game`, `Math`, `Utility`, `Weather`). Add SKSE/SkyUI/MCM/PapyrusUtil dirs here only when a new script needs them. |
 
-**Testing:** the MO2 instance at `$Tools.modlistRoot` (`C:/modding/Baseline`; `C:/modding/modlists`
-also holds `LoreRim`). Use the **`mod-deploy`** skill — it copies `dist/<ModName>/` into
-`$Tools.modsDir` under the exact `$Tools.deployModName` (`Wintersun Nordic Addon`) and verifies it
-landed. A name mismatch is the #1 cause of "my change never showed up in-game": MO2 simply does not
-see the folder and the game runs fine without it. Then enable the mod + its `.esp`, set load order,
-and launch through MO2.
+**Testing:** the MO2 instance at `$Tools.modlistRoot` (`C:/modding/modlists/Baseline`; the sibling
+`C:/modding/modlists/LoreRim` is the other instance). Use the **`mod-deploy`** skill — it copies
+`dist/<ModName>/` into `$Tools.modsDir` under the exact `$Tools.deployModName`
+(`Wintersun - Nordic Addon`, **with the dash** — it must match the existing enabled MO2 folder) and
+verifies it landed. A name mismatch is the #1 cause of "my change never showed up in-game": MO2
+simply does not see the folder and the game runs fine without it — `deployModName` really was wrong
+this way until 2026-08-30. The patch collection is a separate MO2 mod,
+`Wintersun - Nordic Addon (Shrines Patch Collection)`. Then enable the mod + its `.esp`, set load
+order, and launch through MO2.
 
 ## Build & release
 
