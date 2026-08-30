@@ -27,6 +27,7 @@
         { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ThuldorsIvarstead", "dest": "Other/NordicWintersunThuldorsIvarstead.esp" },
         { "yamlSource": "src/WintersunNordicAddonPatchesCollection/WinterholdRestored", "dest": "Other/NordicWintersunWinterholdRestoredPatch.esp" },
         { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ShrineToKyne", "dest": "Other/Nordic Wintersun - Shrine to Kyne.esp" },
+        { "yamlSource": "src/WintersunNordicAddonPatchesCollection/Kynesgarde", "dest": "Other/Nordic Wintersun - Kynesgarde.esp" },
         { "yamlSource": "src/WintersunNordicAddonPatchesCollection/ChildrenOfTheSky", "dest": "Other/Nordic Wintersun - Children of the Sky.esp" },
         { "yamlSource": "src/WintersunNordicAddonPatchesCollection/TheOldWays", "dest": "Other/NordicWintersunTheOldWaysPatch.esp" },
         { "yamlSource": "src/WintersunNordicAddonPatchesCollection/AncientNordicTemple", "dest": "Other/NordicWintersunAncientNordicTemplePatch.esp" },

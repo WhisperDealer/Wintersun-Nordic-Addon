@@ -167,6 +167,25 @@ Note: with this patch installed there is no Shrine of Tsun at this location - us
                                 </dependencyType>
                             </typeDescriptor>
                         </plugin>
+                        <plugin name="Kynesgarde">
+                            <description>Converts the courtyard Shrine of Kyne at Kynesgarde - which uses the vanilla Kynareth shrine underneath - to the Nordic Wintersun Kyne shrine, so it grants Kyne's blessing and the Kyne worship prompt. The Nine Divines shrine row inside the keep is left alone. Requires Kynesgarde.esp active.</description>
+                            <files>
+                                <file source="Other/Nordic Wintersun - Kynesgarde.esp" destination="Nordic Wintersun - Kynesgarde.esp" priority="0"/>
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional"/>
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="And">
+                                                <fileDependency file="Kynesgarde.esp" state="Active"/>
+                                            </dependencies>
+                                            <type name="Recommended"/>
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
                         <plugin name="Children of the Sky">
                             <description>Redirects the Shrine of Kyne added by Children of the Sky to the Nordic Kyne faith, so praying at it earns favor with this addon's Kyne instead of Wintersun's vanilla Kynareth.</description>
                             <files>

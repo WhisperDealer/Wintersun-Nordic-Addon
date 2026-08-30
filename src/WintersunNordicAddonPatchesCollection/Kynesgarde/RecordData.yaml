@@ -1,0 +1,18 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Skyrim
+  Version: 0.40
+ModKey: Nordic Wintersun - Kynesgarde.esp
+GameRelease: SkyrimSE
+ModHeader:
+  Flags:
+  - Small
+  Author: WhisperDealer
+  Stats:
+    Version: 1.71
+  MasterReferences:
+  - Master: Skyrim.esm
+    FileSize: 0
+  - Master: WintersunNordicDivines.esp
+    FileSize: 0
+  - Master: Kynesgarde.esp
+    FileSize: 0
