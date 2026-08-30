@@ -12,7 +12,9 @@ ModHeader:
   MasterReferences:
   - Master: Skyrim.esm
     FileSize: 0
-  - Master: Shrine2Kyne.esp
+  - Master: Wintersun - Faiths of Skyrim.esp
     FileSize: 0
   - Master: WintersunNordicDivines.esp
+    FileSize: 0
+  - Master: Shrine2Kyne.esp
     FileSize: 0

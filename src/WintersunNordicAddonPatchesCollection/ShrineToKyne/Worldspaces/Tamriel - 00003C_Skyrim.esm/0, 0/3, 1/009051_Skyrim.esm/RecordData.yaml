@@ -53,10 +53,24 @@ Regions:
 Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 000857:Shrine2Kyne.esp
-  Base: 00080E:WintersunNordicDivines.esp
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: TempleBlessingScript
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: AltarRemoveMsg
+        Object: 10E4F9:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BlessingMessage
+        Object: 00080F:WintersunNordicDivines.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TempleBlessing
+        Object: 000801:WintersunNordicDivines.esp
+  Base: 00083E:Shrine2Kyne.esp
   Scale: 0.96
   Placement:
     Position: 121016.984, 45932.113, 4921.9087
-    Rotation: 0, -0, 0.60000813
+    Rotation: 0, 0, 0.60000813
 MajorFlags:
 - 0x40000
