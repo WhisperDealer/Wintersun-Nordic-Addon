@@ -165,7 +165,7 @@ as the canonical template to copy — read its full record set first. Create, pe
 | Record | Type | Notes |
 |--------|------|-------|
 | `WSN_AltarBlessing_<Deity>_Effect` | MagicEffect | `PeakValueModArchetype`; ActorValue matches blessing theme; `Association: 0FB98C:Skyrim.esm` (Blessing keyword); `PowerAffectsMagnitude` flag; `PerkToApply` → Boon1 perk |
-| `WSN_AltarBlessing_<Deity>_Spell` | Spell | Blessing type; three effects: blessing MGEF, vanilla `0FBFF5` (favor of the gods), worship-request MGEF (conditional) |
+| `WSN_AltarBlessing_<Deity>_Spell` | Spell | Blessing type; three effects: blessing MGEF, vanilla `0FBFF5` (`CureDiseaseEffect` — the cure-disease effect every vanilla shrine blessing carries), worship-request MGEF (conditional) |
 | `WSN_Shrine_Effect_WorshipRequest_<Deity>` | MagicEffect | Script archetype; `WSN_DeityID = <index>`; links worship-request message |
 | `WSN_WorshipRequest_Message_<Deity>` | Message | MessageBox, Accept/Cancel |
 | `WSN_Basic_Message_<Deity>` | Message | `Favor with <Deity>: %.1f%%` template |
@@ -224,7 +224,7 @@ records per marker:**
   FormKey: <linkKey>:WintersunNordicDivines.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags: [0x400]
-  Base: 000034:Skyrim.esm                 # XMarker base
+  Base: 000034:Skyrim.esm                 # XMarkerHeading (NOT plain XMarker, which is 00003B)
   Placement:
     Position: <X+300>, <Y>, <Z>
     Rotation: 0, 0, 0
@@ -239,7 +239,7 @@ canonical. Do **not** read coordinates from the console.
 | FormKey | Meaning |
 |---------|---------|
 | `000010:Skyrim.esm` | MapMarker base |
-| `000034:Skyrim.esm` | XMarker base |
+| `000034:Skyrim.esm` | `XMarkerHeading` — the marker a map marker links to. Plain `XMarker` is `00003B`; do not swap them |
 | `000014:Skyrim.esm` | PlayerRef |
 | `000038:Skyrim.esm` | GameHour global |
 | `000039:Skyrim.esm` | GameDaysPassed global |
@@ -247,7 +247,7 @@ canonical. Do **not** read coordinates from the console.
 | `0BCC98:Skyrim.esm` | PlayerFollowerCount global |
 | `0C6472:Skyrim.esm` | PlayerMarriedFaction |
 | `0FB98C:Skyrim.esm` | Blessing keyword (PeakValueMod association) |
-| `0FBFF5:Skyrim.esm` | Favor of the Gods MGEF |
+| `0FBFF5:Skyrim.esm` | `CureDiseaseEffect` ("Cure Disease") — the second effect on every vanilla/Wintersun shrine blessing. Not a favor effect, despite older notes here calling it "Favor of the Gods" |
 | `10F63C:Skyrim.esm` | MapMarkerRef LocationRefType |
 | `005901:Wintersun - Faiths of Skyrim.esp` | `WSN_TrackerQuest_Quest` (the central quest) |
 | `00F93C:Wintersun - Faiths of Skyrim.esp` | Tenets MenuDisplayObject |
